@@ -8,6 +8,12 @@ Bantuan Untuk Voice Chat
 • Perintah: <code>{0}startvc</code>
 • Penjelasan: Untuk memulai voice chat grup.
 
+• Perintah: <code>{0}joinvc</code>
+• Penjelasan: Untuk bergabung voice chat grup
+
+• Perintah: <code>{0}leavevc</code>
+• Penjelasan: Untuk keluar voice chat grup
+
 • Perintah: <code>{0}stopvc</code>
 • Penjelasan: Untuk mengakhiri voice chat grup.
 """
@@ -32,3 +38,4 @@ async def _(client, message):
 @PY.UBOT("leavevc", FILTERS.ME_USER)
 async def _(client, message):
     await turun_os(client, message)
+
