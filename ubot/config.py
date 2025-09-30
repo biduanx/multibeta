@@ -5,10 +5,10 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 
 DEVS = [
-    1087819304, #reza
+    7366711345, #reza
 ]
 
-KYNAN = list(map(int, os.getenv("KYNAN", "").split()))
+KYNAN = list(map(int, os.getenv("KYNAN", "7366711345").split()))
 
 API_ID = int(os.getenv("API_ID", ""))
 
