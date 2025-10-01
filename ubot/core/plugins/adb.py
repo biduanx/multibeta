@@ -208,7 +208,7 @@ async def bikin_ubot(client, callback_query):
     await bot_msg.edit(text_done)
     await install_my_peer(new_client)
     try:
-        await new_client.join_chat("zasupport")
+        await new_client.join_chat("haipalkon")
         await new_client.join_chat("kynansupport")
         await new_client.join_chat("saandza")
         await new_client.join_chat("abtnaaa")
