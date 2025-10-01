@@ -27,6 +27,12 @@ __HELP__ = """
 
 • Perintah: <code>{0}nah</code>
 • Penjelasan: Coba sendiri.
+
+• Perintah: <code>{0}kntl</code>
+• Penjelasan: Coba sendiri.
+
+• Perintah: <code>{0}dongo</code>
+• Penjelasan: Coba sendiri.
 """
 
 
@@ -83,3 +89,11 @@ async def _(client, message):
 @PY.UBOT("ajg")
 async def _(client, message):
     await anjg(client, message)
+
+@PY.UBOT("ajg")
+async def _(client, message):
+    await kntl(client, message)
+
+@PY.UBOT("ajg")
+async def _(client, message):
+    await dongo(client, message)
