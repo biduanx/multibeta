@@ -23,5 +23,6 @@ async def _(client, message):
     
 @PY.UBOT("norak")
 async def _(client, message):
-    await roasting_jing(client, message)    
+    await norak_jing(client, message)    
+
 
