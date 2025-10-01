@@ -90,10 +90,11 @@ async def _(client, message):
 async def _(client, message):
     await anjg(client, message)
 
-@PY.UBOT("ajg")
+@PY.UBOT("kntl")
 async def _(client, message):
     await kntl(client, message)
 
-@PY.UBOT("ajg")
+@PY.UBOT("dongo")
 async def _(client, message):
     await dongo(client, message)
+
