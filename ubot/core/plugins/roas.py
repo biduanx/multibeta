@@ -13,7 +13,7 @@ roast = [
 ]
 
 norak = [
-    "**MAEN BOT MULU ALAY, BARU MAKE BOY YA PANTES NORAK!!!**",
+    "**MAEN BOT MULU ALAY, BARU MAKE BOT YA PANTES NORAK!!!**",
     ]
 
 async def roasting_jing(client, message):
@@ -34,3 +34,4 @@ async def norak_jing(client, message):
     else:
         await message.reply(random.choice(norak))        
         
+
