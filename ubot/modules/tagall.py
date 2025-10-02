@@ -1,8 +1,8 @@
 from ubot import *
 
-__MODULE__ = "Mention"
+__MODULE__ = "tagall"
 __HELP__ = """
-Bantuan Untuk Mention
+Bantuan Untuk tagall
 
 • Perintah: <code>{0}all</code> [type message/reply message]
 • Penjelasan: Untuk memention semua anggota grup dengan pesan yang anda inginkan.
