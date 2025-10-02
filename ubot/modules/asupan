@@ -16,6 +16,9 @@ __HELP__ = """
 • Perintah : <code>{0}cowo</code>
 • Penjelasan : Untuk mengirim photo cowok random.
 
+• Perintah : <code>{0}pap</code>
+• Penjelasan : Untuk mengirim photo pap random.
+
 • Perintah :  <code>{0}anime</code>
 • Penjelasan :  Untuk mengirim photo anime random.
 """
@@ -25,12 +28,12 @@ async def _(client, message):
     await video_asupan(client, message)
 
 
-@PY.UBOT("cewek")
+@PY.UBOT("cewe")
 async def _(client, message):
     await photo_cewek(client, message)
 
 
-@PY.UBOT("cowok")
+@PY.UBOT("cowo")
 async def _(client, message):
     await photo_cowok(client, message)
 
@@ -43,3 +46,8 @@ async def _(client, message):
 @PY.UBOT("bokep")
 async def _(client, message):
     await video_bokep(client, message)
+
+
+@PY.UBOT("pap")
+async def _(client, message):
+    await bugil(client, message)
