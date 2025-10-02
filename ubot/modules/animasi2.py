@@ -23,7 +23,7 @@ __HELP__ = """
 • Perintah: <code>{0}alay</code>
 • Penjelasan: Untuk caci maki manusia gak tau diri.
 
-• Perintah: <code>{0}aliansi2</code>
+• Perintah: <code>{0}bertitle</code>
 • Penjelasan: Untuk caci maki manusia gak tau diri.
 
 • Perintah: <code>{0}war</code>
@@ -52,9 +52,9 @@ async def _(client, message):
 async def _(client, message):
     await alay(client, message)
     
-@PY.UBOT("aliansi2")
+@PY.UBOT("bertitle")
 async def _(client, message):
-    await aliansi2(client, message)    
+    await bertitle(client, message)    
 
 @PY.UBOT("war")
 async def _(client, message):
