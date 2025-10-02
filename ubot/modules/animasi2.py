@@ -16,15 +16,6 @@ __HELP__ = """
 
 • Perintah: <code>{0}ganteng</code>
 • Penjelasan: Untuk caci maki manusia gak tau diri.
-
-• Perintah: <code>{0}gcs</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
-
-• Perintah: <code>{0}alay</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
-
-• Perintah: <code>{0}aliansi2</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
 """
 
 
@@ -41,14 +32,4 @@ async def _(client, message):
 async def _(client, message):
     await ganteng(client, message)    
     
-@PY.UBOT("gcs")
-async def _(client, message):
-    await gcs(client, message)
 
-@PY.UBOT("alay")
-async def _(client, message):
-    await alay(client, message)
-    
-@PY.UBOT("aliansi2")
-async def _(client, message):
-    await aliansi2(client, message)        
