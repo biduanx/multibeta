@@ -30,7 +30,7 @@ Apa Ada Yang Bisa Saya Bantu ? Jika Kamu Sudah Melakukan Pembayaran Silakan Klik
 
     def TEXT_PAYMENT(harga, total, bulan):
         return f"""
-<b>Silakan Lakukan Pembayaran Terlebih Dahulu</b>
+<blockquote expandable><b>Silakan Lakukan Pembayaran Terlebih Dahulu
 
 <b>Harga Perbulan: {harga}.000</b>
 
@@ -42,7 +42,7 @@ Apa Ada Yang Bisa Saya Bantu ? Jika Kamu Sudah Melakukan Pembayaran Silakan Klik
 <b>🔖 Total Harga: ʀᴘ {total}.000</b>
 <b>🗓️ Total Bulan: {bulan}</b> 
 
-<b>✅ Klik Tombol Di Bawah Ini Untuk Mengirimkan Bukti Pembayaran</b>
+✅ Klik Tombol Di Bawah Ini Untuk Mengirimkan Bukti Pembayaran</b></blockquote>
 """
     async def USERBOT(count):
         expired_date = await get_expired_date(ubot._ubot[int(count)].me.id)
