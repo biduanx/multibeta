@@ -36,7 +36,7 @@ Apa Ada Yang Bisa Saya Bantu ? Jika Kamu Sudah Melakukan Pembayaran Silakan Klik
 
 <b>💳 Metode Pembayaran:</b>
  <b>├──• Dana </b>
- <b>├─• <code>08XXXXXXXX</code></b>
+ <b>├─• <code>085191976601</code></b>
 
 
 <b>🔖 Total Harga: ʀᴘ {total}.000</b>
