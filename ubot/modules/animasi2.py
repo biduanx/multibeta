@@ -4,9 +4,9 @@ Amwang Kontol
 
 from ubot import *
 
-__MODULE__ = "animasi2"
+__MODULE__ = "Animasi2"
 __HELP__ = """
- Bantuan Untuk animasi2
+ Bantuan Untuk Animasi2
 
 • Perintah: <code>{0}aliansi</code>
 • Penjelasan: Untuk caci maki manusia gak tau diri.
