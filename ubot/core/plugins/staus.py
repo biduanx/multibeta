@@ -89,7 +89,7 @@ async def ewdsfgj(client, callback_query):
         )
 
     await callback_query.edit_message_text(f"""
-<b>reza-ubot</b>
+<b>zp-ubot</b>
     <b>Status Ubot:</b> <code>{status2}</code>
       <b>Status Pengguna:</b> <i>{status}</i>
       <b>Prefixes :</b> <code>{prefix[0]}</code>
@@ -98,4 +98,5 @@ async def ewdsfgj(client, callback_query):
 """,
         reply_markup=keyboard,
     )
+
     
