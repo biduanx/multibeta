@@ -33,6 +33,8 @@ async def aliansi(client, message):
     await e.edit("**Padahal Di Real Life jadi kacung Tongkrongan**")    
     await asyncio.sleep(1.5)
     await e.edit("**HAHAHA DONGO**")        
+    await asyncio.sleep(1)
+    await e.delete()        
 
 async def jablay(client, message):
     e = await message.edit("**Ehh Jablay Tele**")
@@ -44,7 +46,9 @@ async def jablay(client, message):
     await e.edit("**Kencing Aja Masih Kemana2**")
     await asyncio.sleep(1.5)
     await e.edit("**Tolol Amat Lu Nyet**")
-
+    await asyncio.sleep(1)
+    await e.delete()    
+    
 async def ganteng(client, message):
     e = await message.edit("**Paling Bener Emang**")
     await asyncio.sleep(2)
@@ -53,6 +57,8 @@ async def ganteng(client, message):
     await e.edit("**GANTENG 😎**")
     await asyncio.sleep(2)
     await e.edit("**CIHUYY 😜**")
+    await asyncio.sleep(1)
+    await e.delete()    
     
 async def gcs(client, message):
     e = await message.edit("**DARRR**")
@@ -64,7 +70,9 @@ async def gcs(client, message):
     await e.edit("**GC AMPAS LU**")
     await asyncio.sleep(1)
     await e.edit("**GW GEDORR 😭**")
-
+    await asyncio.sleep(1)
+    await e.delete()    
+    
 async def alay(client, message):
     e = await message.edit("**MAIN BOT MULU ALAY**")
     await asyncio.sleep(1.5)
@@ -77,7 +85,9 @@ async def alay(client, message):
     await e.edit("**PANTAS AJA NORAK**")
     await asyncio.sleep(1.5)
     await e.edit("**BOCAH DONGOO**")
-
+    await asyncio.sleep(1)
+    await e.delete()    
+    
 async def bertitle(client, message):
     e = await message.edit("**Sial Ada Orang Bertitle😨**")
     await asyncio.sleep(1.7)
@@ -118,7 +128,9 @@ async def bertitle(client, message):
     await e.edit("**Dasar Orang Bertitle, Penyembah GC😭**")
     await asyncio.sleep(1.7)
     await e.edit("**IUHH NGEBELA GC SEGITUNYA😖**")
-
+    await asyncio.sleep(1)
+    await e.delete()    
+    
 async def war(client, message):
     e = await message.edit("**War2 Tai Ajg**")
     await asyncio.sleep(1.5)
@@ -127,3 +139,5 @@ async def war(client, message):
     await e.edit("**Udah Di Sharelok Ga Nyamperin**")
     await asyncio.sleep(1.5)
     await e.edit("**Keras Di Sosmed Bhakss...**")    
+    await asyncio.sleep(1)
+    await e.delete()    
