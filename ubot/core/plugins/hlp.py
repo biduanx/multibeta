@@ -71,7 +71,7 @@ async def menu_callback(client, callback_query):
         #text = HELP_COMMANDS[module].__HELP__
         button = [[InlineKeyboardButton("Kembali", callback_data="help_back")]]
         await callback_query.edit_message_text(
-            text=text + "\n<b> ©reza-ubot </b>",
+            text=text + "\n<b> ©zp-ubot </b>",
             reply_markup=InlineKeyboardMarkup(button),
             disable_web_page_preview=True,
         )
