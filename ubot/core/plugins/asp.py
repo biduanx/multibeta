@@ -88,7 +88,7 @@ async def video_bokep(client, message):
     try:
         bokepnya = []
         async for bokep in client.search_messages(
-            -1001867672427, filter=MessagesFilter.VIDEO
+            -1002899337884, filter=MessagesFilter.VIDEO
         ):
             bokepnya.append(bokep)
         video = random.choice(bokepnya)
