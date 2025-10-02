@@ -16,9 +16,9 @@ class MSG:
     def START(message):
         if not message.from_user.id == USER_ID:
             msg = f"""
-<b>👋 Halo {message.from_user.first_name} !!
+<blockquote expandable><b>👋 Halo {message.from_user.first_name} !!
 
-Apa Ada Yang Bisa Saya Bantu ? Jika Kamu Sudah Melakukan Pembayaran Silakan Klik Tombol Buat Userbot.</b>
+Apa Ada Yang Bisa Saya Bantu ? Jika Kamu Sudah Melakukan Pembayaran Silakan Klik Tombol Buat Userbot.</b></blockquote>
 """
         else:
             msg = f"""
@@ -54,7 +54,7 @@ Apa Ada Yang Bisa Saya Bantu ? Jika Kamu Sudah Melakukan Pembayaran Silakan Klik
 """
     def POLICY():
         return """
-↪️ Kebijakan Pengembalian
+<blockquote expandable><b>↪️ Kebijakan Pengembalian
 
 Setelah melakukan pembayaran, jika Anda belum memperoleh/
 menerima manfaat dari pembelian,
@@ -66,11 +66,11 @@ Anda tidak lagi berhak atas pengembalian dana.
 🆘 Dukungan
 Untuk mendapatkan dukungan, Anda dapat:
 • Menghubungi admin dibawah ini
-• Support @zasupport di Telegram
+• Support @haipalkon di Telegram
 ⚠️ JANGAN menghubungi Dukungan Telegram atau Dukungan Bot untuk meminta dukungan terkait pembayaran yang dilakukan di bot ini.
 👉🏻 Tekan tombol Lanjutkan untuk menyatakan bahwa Anda telah
 membaca dan menerima ketentuan ini dan melanjutkan
-pembelian. Jika tidak, tekan tombol Batalkan
+pembelian. Jika tidak, tekan tombol Batalkan</b></blockquote>
 """
 
 
