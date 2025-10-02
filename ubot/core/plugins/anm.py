@@ -169,6 +169,122 @@ async def babi(client, message):
     )
 
 
+async def piciieess(client, message):
+    e = await message.edit("Ayanggg 😖")
+    await asyncio.sleep(2)
+    await e.edit("Aku Ange 😫")
+    await asyncio.sleep(2)
+    await e.edit("Ayuukk Picies Yang 🤤")
+
+
+async def lipkoll(client, message):
+    e = await message.edit("Ayanggg 😖")
+    await asyncio.sleep(2)
+    await e.edit("Kangeeen 👉👈")
+    await asyncio.sleep(2)
+    await e.edit("Pingiinn Slipkool Yaaang 🥺👉👈")
+
+
+async def nakall(client, message):
+    e = await message.edit("Ayanggg ih🥺")
+    await asyncio.sleep(2)
+    await e.edit("Nakal Banget Dah Ayang 🥺")
+    await asyncio.sleep(2)
+    await e.edit("Aku Gak Like Ayang 😠")
+    await asyncio.sleep(2)
+    await e.edit("Pokoknya Aku Gak Like Ih 😠")
+
+
+async def peace(client: Client, message: Message):
+    await message.reply(
+        "┈┈┈┈PEACE MAN┈┈┈┈\n"
+        "┈┈┈┈┈┈╭╮╭╮┈┈┈┈┈┈\n"
+        "┈┈┈┈┈┈┃┃┃┃┈┈┈┈┈┈\n"
+        "┈┈┈┈┈┈┃┃┃┃┈┈┈┈┈┈\n"
+        "┈┈┈┈┈┈┃┗┛┣┳╮┈┈┈┈\n"
+        "┈┈┈┈┈╭┻━━┓┃┃┈┈┈┈\n"
+        "┈┈┈┈┈┃╲┏━╯┻┫┈┈┈┈\n"
+        "┈┈┈┈┈╰╮╯┊┊╭╯┈┈┈┈\n",
+    )
+
+
+async def spongebobss(client: Client, message: Message):
+    await message.reply(
+        "╲┏━┳━━━━━━━━┓╲╲\n"
+        "╲┃◯┃╭┻┻╮╭┻┻╮┃╲╲\n"
+        "╲┃╮┃┃╭╮┃┃╭╮┃┃╲╲\n"
+        "╲┃╯┃┗┻┻┛┗┻┻┻┻╮╲\n"
+        "╲┃◯┃╭╮╰╯┏━━━┳╯╲\n"
+        "╲┃╭┃╰┏┳┳┳┳┓◯┃╲╲\n"
+        "╲┃╰┃◯╰┗┛┗┛╯╭┃╲╲\n",
+    )
+
+
+async def kocokk(client, message):
+    e = await message.reply("KOCOKINNNN SAYANGG🥵")
+    await asyncio.sleep(0.2)
+    await e.edit("8✊===D")
+    await asyncio.sleep(0.2)
+    await e.edit("8=✊==D")
+    await asyncio.sleep(0.2)
+    await e.edit("8==✊=D")
+    await asyncio.sleep(0.2)
+    await e.edit("8===✊D")
+    await asyncio.sleep(0.2)
+    await e.edit("8==✊=D")
+    await asyncio.sleep(0.2)
+    await e.edit("8=✊==D")
+    await asyncio.sleep(0.2)
+    await e.edit("8✊===D")
+    await asyncio.sleep(0.2)
+    await e.edit("8=✊==D")
+    await asyncio.sleep(0.2)
+    await e.edit("8==✊=D")
+    await asyncio.sleep(0.2)
+    await e.edit("8===✊D")
+    await asyncio.sleep(0.2)
+    await e.edit("8==✊=D")
+    await asyncio.sleep(0.2)
+    await e.edit("8=✊==D")
+    await asyncio.sleep(0.2)
+    await e.edit("8✊===D")
+    await asyncio.sleep(0.2)
+    await e.edit("8=✊==D")
+    await asyncio.sleep(0.2)
+    await e.edit("8==✊=D")
+    await asyncio.sleep(0.2)
+    await e.edit("8===✊D")
+    await asyncio.sleep(0.2)
+    await e.edit("8==✊=D")
+    await asyncio.sleep(0.2)
+    await e.edit("8=✊==D")
+    await asyncio.sleep(0.2)
+    await e.edit("8===✊D💦")
+    await asyncio.sleep(0.2)
+    await e.edit("8==✊=D💦💦")
+    await asyncio.sleep(0.2)
+    await e.edit("8=✊==D💦💦💦")
+    await asyncio.sleep(0.2)
+    await e.edit("8✊===D💦💦💦💦")
+    await asyncio.sleep(0.2)
+    await e.edit("8===✊D💦💦💦💦💦")
+    await asyncio.sleep(0.2)
+    await e.edit("8==✊=D💦💦💦💦💦💦")
+    await asyncio.sleep(0.2)
+    await e.edit("8=✊==D💦💦💦💦💦💦💦")
+    await asyncio.sleep(0.2)
+    await e.edit("8✊===D💦💦💦💦💦💦💦💦")
+    await asyncio.sleep(0.2)
+    await e.edit("8===✊D💦💦💦💦💦💦💦💦💦")
+    await asyncio.sleep(0.2)
+    await e.edit("8==✊=D💦💦💦💦💦💦💦💦💦💦")
+    await asyncio.sleep(0.2)
+    await e.edit("**CROOTTTT**")
+    await asyncio.sleep(0.2)
+    await e.edit("**CROOTTTT AAAHHH.....**")
+    await asyncio.sleep(0.2)
+    await e.edit("AHHH ENAKKKKK SAYANGGGG🥵🥵**")
+
 
 async def anjg(client, message):
     await message.reply(
@@ -180,9 +296,9 @@ async def anjg(client, message):
         "╨━━┗┛┗┛━━┗┛┗┛━━┻\n",
     )
 
+
+
 async def nahlove(client, message):
     typew = await message.reply("`\n(\\_/)`" "`\n(●_●)`" "`\n />💖 *Ini Buat Kamu`")
     await asyncio.sleep(2)
     await typew.edit("`\n(\\_/)`" "`\n(●_●)`" "`\n💖<\\  *Tapi Bo'ong`")
-
-
