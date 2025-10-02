@@ -1,5 +1,3 @@
-
- 
 from asyncio import sleep
 from contextlib import suppress
 from random import randint
@@ -33,36 +31,18 @@ async def get_group_call(
 
 
 async def start_vctools(client, message):
-    flags = " ".join(message.command[1:])
     ky = await message.reply("<code>Processing....</code>")
-    vctitle = get_arg(message)
-    if flags == enums.ChatType.CHANNEL:
-        chat_id = message.chat.title
-    else:
-        chat_id = message.chat.id
-    args = (
-        f"<b>• Obrolan Suara Aktif</b>\n<b>• Chat : </b><code>{message.chat.title}</code>"
-    )
+    chat_id = message.chat.id
     try:
-        if not vctitle:
-            await client.invoke(
-                CreateGroupCall(
-                    peer=(await client.resolve_peer(chat_id)),
-                    random_id=randint(10000, 999999999),
-                )
+        await client.invoke(
+            CreateGroupCall(
+            peer=(await client.resolve_peer(chat_id)),
+            random_id=randint(0, 2147483647),
             )
-        else:
-            args += f"\n • <b>Title : </b> <code>{vctitle}</code>"
-            await client.invoke(
-                CreateGroupCall(
-                    peer=(await client.resolve_peer(chat_id)),
-                    random_id=randint(10000, 999999999),
-                    title=vctitle,
-                )
-            )
-        await ky.edit(args)
+        )
+        await ky.edit(f"<b>• Obrolan Suara Aktif</b>\n<b>• Chat : </b><code>{message.chat.title}</code>")
     except Exception as e:
-        await ky.edit(f"<b>INFO:</b> `{e}`")
+        await ky.edit(f"<b>Error:</b> <code{e}</code>")
 
 
 
@@ -81,34 +61,41 @@ async def stop_vctools(client, message):
 
 
 async def join_os(client, message):
-    kk = message.from_user.id
-    ky = await message.reply("<code>Processing....</code>")
+    if message.from_user.id != client.me.id:
+        ky = await message.reply("<code>Processing....</code>")
+    else:
+        ky = await eor(message, "<code>Processing....</code>")
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
-        await client.vc.start(chat_id)
+        await client.group_call.start(chat_id)
 
     except Exception as e:
         return await ky.edit(f"ERROR: {e}")
     await ky.edit(
-        f"• <b>Berhasil Join Voice Chat</b>\n<b>• Chat : </b><code>{message.chat.title}</code>"
+        f"❏ <b>Berhasil Join Voice Chat</b>\n└ <b>Chat :</b><code>{message.chat.title}</code>"
     )
-    await client.vc.set_is_mute(True)
+    await sleep(1)
+    await client.group_call.set_is_mute(True)
+    await ky.delete()
 
 
-async def turun_os(client, message):
-    ky = await message.reply("<code>Processing....</code>")
+async def turun_os(client: Client, message: Message):
+    if message.from_user.id != client.me.id:
+        ky = await message.reply("<code>Processing....</code>")
+    else:
+        ky = await eor(message, "<code>Processing....</code>")
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
-      
-        await client.vc.stop()
-
+        await client.group_call.stop()
     except Exception as e:
         return await ky.edit(f"<b>ERROR:</b> {e}")
-    msg = "• <b>Berhasil Meninggalkan Voice Chat</b>\n"
+    msg = "❏ <b>Berhasil Meninggalkan Voice Chat</b>\n"
     if chat_id:
-        msg += f"<b>• Chat : </b><code>{message.chat.title}</code>"
+        msg += f"└ <b>Chat :</b><code>{message.chat.title}</code>"
     await ky.edit(msg)
+    await sleep(1)
+    await ky.delete()
