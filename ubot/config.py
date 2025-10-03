@@ -5,7 +5,9 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 
 DEVS = [
-    7366711345, #reza
+    7366711345, #zp
+    7747417297, #sam
+    7815610371, #zpx
 ]
 
 KYNAN = list(map(int, os.getenv("KYNAN", "7366711345").split()))
