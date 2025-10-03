@@ -1,7 +1,7 @@
-import asyncio
+from asyncio import sleep
+from contextlib import suppress
 from random import randint
 from typing import Optional
-from contextlib import suppress
 
 from pyrogram import Client, enums, filters
 from pyrogram.raw.functions.channels import GetFullChannel
@@ -10,8 +10,7 @@ from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import Message
 from ubot import *
-from ubotlibs.ubot.helper import get_arg
-from ubotlibs.ubot.helper.basic import edit_or_reply
+
 
 
 
@@ -21,12 +20,10 @@ async def get_group_call(
     chat_peer = await client.resolve_peer(message.chat.id)
     if isinstance(chat_peer, (InputPeerChannel, InputPeerChat)):
         if isinstance(chat_peer, InputPeerChannel):
-            full_chat = (
-                await client.invoke(GetFullChannel(channel=chat_peer))
-            ).full_chat
+            full_chat = (await client.send(GetFullChannel(channel=chat_peer))).full_chat
         elif isinstance(chat_peer, InputPeerChat):
             full_chat = (
-                await client.invoke(GetFullChat(chat_id=chat_peer.chat_id))
+                await client.send(GetFullChat(chat_id=chat_peer.chat_id))
             ).full_chat
         if full_chat is not None:
             return full_chat.call
@@ -34,57 +31,15 @@ async def get_group_call(
     return False
 
 
-async def join_os(client: Client, message: Message):
-    chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
-    if message.from_user.id != client.me.id:
-        ky = await message.reply("Processing...")
-    else:
-        ky = await message.edit("Processing....")
-    with suppress(ValueError):
-        chat_id = int(chat_id)
-    try:
-        await client.group_call.start(chat_id)
-        await ky.edit(f"**Berhasil Join Ke Obrolan Suara**\n└ **Chat ID**: {chat_id}")
-        await asyncio.sleep(5)
-        await client.group_call.set_is_mute(True)
-        await asyncio.sleep(7200) 
-    except asyncio.TimeoutError:
-        await client.group_call.stop()
-        return await ky.edit("**Waktu Habis ! Keluar dari obrolan suara**\n└ **Chat ID** : `{chat_id}`")
-    except Exception as e:
-        return await ky.edit(f"ERROR: {e}")
-    finally:
-        await client.group_call.stop()
-    await ky.edit(f"**Waktu Habis..**\n**Berhasil Turun Dari Obrolan Suara**\n└ **Chat ID** : `{chat_id}`")
-
-
-async def turun_os(client: Client, message: Message):
-    chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
-    if message.from_user.id != client.me.id:
-        ky = await message.reply("`Processing...`")
-    else:
-        ky = await message.edit("`Processing....`")
-    with suppress(ValueError):
-        chat_id = int(chat_id)
-    try:
-        await client.group_call.stop()
-    except Exception as e:
-        return await edit_or_reply(message, f"**ERROR:** `{e}`")
-    msg = "**Berhasil Meninggalkan Obrolan Suara**\n**"
-    if chat_id:
-        msg += f"\n└ **Chat ID:** `{chat_id}`"
-    await ky.edit(msg)
-
-
 async def start_vctools(client: Client, message: Message):
     flags = " ".join(message.command[1:])
-    ky = await edit_or_reply(message, "`Processing . . .`")
+    Man = await edit_or_reply(message, "`Processing . . .`")
     vctitle = get_arg(message)
     if flags == enums.ChatType.CHANNEL:
         chat_id = message.chat.title
     else:
         chat_id = message.chat.id
-    args = f"**Obrolan Suara Aktif**\n • **Chat ID** : `{chat_id}`"
+    args = f"**Started Group Call\n • **Chat ID** : `{chat_id}`"
     try:
         if not vctitle:
             await client.invoke(
@@ -102,19 +57,51 @@ async def start_vctools(client: Client, message: Message):
                     title=vctitle,
                 )
             )
-        await ky.edit(args)
+        await Man.edit(args)
     except Exception as e:
-        await ky.edit(f"**INFO:** `{e}`")
-
-
+        await Man.edit(f"**INFO:** `{e}`")
+        
 async def stop_vctools(client: Client, message: Message):
-    """Processing..."""
+    """End group call"""
     chat_id = message.chat.id
     if not (
-        group_call := (await get_group_call(client, message, err_msg=", Kesalahan..."))
+        group_call := (
+            await get_group_call(client, message, err_msg=", group call already ended")
+        )
     ):
         return
     await client.send(DiscardGroupCall(call=group_call))
-    await edit_or_reply(
-        message, f"**Obrolan Suara Diakhiri**\n • **Chat ID** : `{chat_id}`"
-    )
+    await edit_or_reply(message, f"Ended group call in **Chat ID** : `{chat_id}`")        
+    
+async def join_os(client: Client, message: Message):
+    chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
+    if message.from_user.id != client.me.id:
+        Man = await message.reply("`Processing...`")
+    else:
+        Man = await message.edit("`Processing....`")
+    with suppress(ValueError):
+        chat_id = int(chat_id)
+    try:
+        await client.group_call.start(chat_id)
+    except Exception as e:
+        return await Man.edit(f"**ERROR:** `{e}`")
+    await Man.edit(f"❏ **Berhasil Join Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`")
+    await sleep(5)
+    await client.group_call.set_is_mute(True)    
+    
+async def turun_os(client: Client, message: Message):
+    chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
+    if message.from_user.id != client.me.id:
+        Man = await message.reply("`Processing...`")
+    else:
+        Man = await message.edit("`Processing....`")
+    with suppress(ValueError):
+        chat_id = int(chat_id)
+    try:
+        await client.group_call.stop()
+    except Exception as e:
+        return await edit_or_reply(message, f"**ERROR:** `{e}`")
+    msg = "❏ **Berhasil Turun dari Obrolan Suara**"
+    if chat_id:
+        msg += f"\n└ **Chat ID:** `{chat_id}`"
+    await Man.edit(msg)    
