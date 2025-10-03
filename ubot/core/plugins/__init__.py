@@ -57,6 +57,7 @@ from ubot.core.plugins.rmndr import *
 from ubot.core.plugins.wbs import *
 from ubot.core.plugins.anm import *
 from ubot.core.plugins.anm2 import *
+from ubot.core.plugins.anm3 import *
 from ubot.core.plugins.crpt import *
 from ubot.core.plugins.bwt import *
 #from ubot.core.plugins.roas import *
