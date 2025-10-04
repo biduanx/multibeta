@@ -1,4 +1,4 @@
-from ubot.core.plugins.afk import *
+from ubot.core.plugins.afky import *
 from ubot.core.plugins.join import *
 from ubot.core.plugins.crbn import *
 from ubot.core.plugins.prof import *
