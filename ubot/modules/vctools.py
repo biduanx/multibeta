@@ -1,18 +1,21 @@
-__MODULE__ = "vctools"
+from ubot import *
+
+
+__MODULE__ = "VoiceChat"
 __HELP__ = """
-<b>『 Bantuan untuk vctools 』</b>
+Bantuan Untuk Voice Chat
 
-  <b>• Perintah:</b> <code>{0}joinvc</code>
-  <b>• Penjelasan:</b> Untuk bergabung ke voice chat group
+• Perintah: <code>{0}startvc</code>
+• Penjelasan: Untuk memulai voice chat grup.
 
-  <b>• Perintah:</b> <code>{0}leavevc</code>
-  <b>• Penjelasan:</b> Untuk meninggalkan dari voice chat group
+• Perintah: <code>{0}stopvc</code>
+• Penjelasan: Untuk mengakhiri voice chat grup.
 
-  <b>• Perintah:</b> <code>{0}startvc</code>
-  <b>• Penjelasan:</b> Untuk memulai obrolan group 
+• Perintah: <code>{0}joinvc</code>
+• Penjelasan: Untuk memulai voice chat grup.
 
-  <b>• Perintah:</b> <code>{0}stopvc</code>
-  <b>• Penjelasan:</b> Untuk menghentikan obrolan group 
+• Perintah: <code>{0}leavevc</code>
+• Penjelasan: Untuk mengakhiri voice chat grup.
 """
 
 import asyncio
@@ -115,3 +118,4 @@ async def stop_vctools(client, message):
         await stop_vctools(client, message)  # Retry after waiting
     except Exception as e:
         await message.reply(f"ERROR: {e}")
+
