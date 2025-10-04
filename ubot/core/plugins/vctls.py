@@ -1,3 +1,20 @@
+__MODULE__ = "vctools"
+__HELP__ = """
+<b>『 Bantuan untuk vctools 』</b>
+
+  <b>• Perintah:</b> <code>{0}joinvc</code>
+  <b>• Penjelasan:</b> Untuk bergabung ke voice chat group
+
+  <b>• Perintah:</b> <code>{0}leavevc</code>
+  <b>• Penjelasan:</b> Untuk meninggalkan dari voice chat group
+
+  <b>• Perintah:</b> <code>{0}startvc</code>
+  <b>• Penjelasan:</b> Untuk memulai obrolan group 
+
+  <b>• Perintah:</b> <code>{0}stopvc</code>
+  <b>• Penjelasan:</b> Untuk menghentikan obrolan group 
+"""
+
 import asyncio
 from random import randint
 from pyrogram.raw.functions.channels import GetFullChannel
@@ -99,3 +116,4 @@ async def stop_vctools(client, message):
         await stop_vctools(client, message)  # Retry after waiting
     except Exception as e:
         await message.reply(f"ERROR: {e}")
+
