@@ -1,20 +1,3 @@
-__MODULE__ = "vctools"
-__HELP__ = """
-<b>『 Bantuan untuk vctools 』</b>
-
-  <b>• Perintah:</b> <code>{0}joinvc</code>
-  <b>• Penjelasan:</b> Untuk bergabung ke voice chat group
-
-  <b>• Perintah:</b> <code>{0}leavevc</code>
-  <b>• Penjelasan:</b> Untuk meninggalkan dari voice chat group
-
-  <b>• Perintah:</b> <code>{0}startvc</code>
-  <b>• Penjelasan:</b> Untuk memulai obrolan group 
-
-  <b>• Perintah:</b> <code>{0}stopvc</code>
-  <b>• Penjelasan:</b> Untuk menghentikan obrolan group 
-"""
-
 import asyncio
 from random import randint
 from pyrogram.raw.functions.channels import GetFullChannel
@@ -51,9 +34,6 @@ async def get_group_call(client, message):
     await message.reply("**No group call Found**")
     return False
 
-
-@PY.UBOT("joinvc", SUDO=True)
-@ubot.on_message(filters.user(USER_ID) & filters.command("jovc"))
 async def join_os(client, message):
     msg = await message.reply(f"Processing...")
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
@@ -68,9 +48,7 @@ async def join_os(client, message):
     except Exception as e:
         await msg.edit(f"ERROR: {e}")
 
-@PY.UBOT("leavevc", SUDO=True)
-@ubot.on_message(filters.user(USER_ID) & filters.command("levc"))
-async def leave_os(client, message):
+  async def leave_os(client, message):
     try:
         await client.group_call.stop()
         await message.reply(f"<b>Successfully left the Voice Chat</b>")
@@ -80,7 +58,6 @@ async def leave_os(client, message):
     except Exception as e:
         await message.reply(f"ERROR: {e}")
 
-@PY.UBOT("startvc", SUDO=True)
 async def start_vctools(client, message):
     flags = " ".join(message.command[1:])
     vctitle = get_arg(message)
@@ -102,7 +79,6 @@ async def start_vctools(client, message):
     except Exception as e:
         await message.reply(f"<b>INFO:</b> {e}")
 
-@PY.UBOT("stopvc", SUDO=True)
 async def stop_vctools(client, message):
     group_call = await get_group_call(client, message)
     if not group_call:
@@ -116,4 +92,3 @@ async def stop_vctools(client, message):
         await stop_vctools(client, message)  # Retry after waiting
     except Exception as e:
         await message.reply(f"ERROR: {e}")
-
