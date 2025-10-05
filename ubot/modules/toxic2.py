@@ -17,6 +17,9 @@ __HELP__ = """
 • Perintah: <code>{0}badut</code>
 • Penjelasan: coba aja sendiri.
 
+• Perintah: <code>{0}zp</code>
+• Penjelasan: coba aja sendiri.
+
 """
 
 
@@ -33,3 +36,6 @@ async def _(client, message):
 async def _(client, message):
     await badut(client, message)
 
+@PY.UBOT("zp")
+async def _(client, message):
+    await zp(client, message)
