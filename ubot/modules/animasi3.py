@@ -14,8 +14,12 @@ __HELP__ = """
 • Perintah: <code>{0}kendu</code>
 • Penjelasan: coba aja sendiri.
 
-• Perintah: <code>{0}cinta</code>
+• Perintah: <code>{0}badut</code>
 • Penjelasan: coba aja sendiri.
+
+• Perintah: <code>{0}wibu</code>
+• Penjelasan: coba aja sendiri.
+
 """
 
 
@@ -28,7 +32,11 @@ async def _(client, message):
 async def _(client, message):
     await kendu(client, message)
     
-@PY.UBOT("cinta")
+@PY.UBOT("badut")
 async def _(client, message):
-    await cinta(client, message)    
+    await badut(client, message)
+
+@PY.UBOT("wibu")
+async def _(client, message):
+    await wibu(client, message)
     
