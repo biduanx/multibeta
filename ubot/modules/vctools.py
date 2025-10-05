@@ -11,10 +11,10 @@ Bantuan Untuk Voice Chat
 • Perintah: <code>{0}stopvc</code>
 • Penjelasan: Untuk mengakhiri voice chat grup.
 
-• Perintah: <code>{0}joinvc</code>
+• Perintah: <code>{0}joinvcs</code>
 • Penjelasan: Untuk memulai voice chat grup.
 
-• Perintah: <code>{0}leavevc</code>
+• Perintah: <code>{0}leavevcs</code>
 • Penjelasan: Untuk mengakhiri voice chat grup.
 """
 
@@ -31,11 +31,12 @@ async def _(client, message):
     await stop_vctools(client, message)
 
 
-@PY.UBOT("joinvc", FILTERS.ME_USER)
+@PY.UBOT("joinvcs", FILTERS.ME_USER)
 async def _(client, message):
     await join_os(client, message)
 
 
-@PY.UBOT("leavevc", FILTERS.ME_USER)
+@PY.UBOT("leavevcs", FILTERS.ME_USER)
 async def _(client, message):
     await turun_os(client, message)
+
