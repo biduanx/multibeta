@@ -4,30 +4,30 @@ Amwang Kontol
 
 from ubot import *
 
-__MODULE__ = "Animasi2"
+__MODULE__ = "Toxic3"
 __HELP__ = """
- Bantuan Untuk Animasi2
+ Bantuan Untuk Toxic3
 
 • Perintah: <code>{0}aliansi</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
+• Penjelasan: coba sendiri mek.
 
 • Perintah: <code>{0}jablay</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
+• Penjelasan: coba sendiri mek.
 
 • Perintah: <code>{0}ganteng</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
+• Penjelasan: coba sendiri mek.
 
 • Perintah: <code>{0}gcs</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
+• Penjelasan: coba sendiri mek.
 
 • Perintah: <code>{0}alay</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
+• Penjelasan: coba sendiri mek.
 
 • Perintah: <code>{0}bertitle</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
+• Penjelasan: coba sendiri mek.
 
 • Perintah: <code>{0}war</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
+• Penjelasan: coba sendiri mek.
 """
 
 
