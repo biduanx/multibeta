@@ -62,3 +62,17 @@ async def badut(client, message):
     await asyncio.sleep(1)
     await e.delete()    
     
+async def zp(client, message):
+    e = await message.edit("**Hai Perkenalkan Aku Cilokk**")
+    await asyncio.sleep(1.5)
+    await e.edit("**22 Tahun**")
+    await asyncio.sleep(1.5)
+    await e.edit("**Tinggal Di Mkssr**")
+    await asyncio.sleep(1.5)
+    await e.edit("**Hobi Gua Ngaji ngasah biji 😹**")
+    await asyncio.sleep(1.5)
+    await e.edit("**Bekerja Di PT Pencari Cinta Sejati**")
+    await asyncio.sleep(1.5)
+    await e.edit("**Salken Ya Warga Telekram**")
+    await asyncio.sleep(1.5)
+    await e.delete()    
