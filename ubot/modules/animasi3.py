@@ -17,9 +17,6 @@ __HELP__ = """
 • Perintah: <code>{0}badut</code>
 • Penjelasan: coba aja sendiri.
 
-• Perintah: <code>{0}wibu</code>
-• Penjelasan: coba aja sendiri.
-
 """
 
 
@@ -36,7 +33,3 @@ async def _(client, message):
 async def _(client, message):
     await badut(client, message)
 
-@PY.UBOT("wibu")
-async def _(client, message):
-    await wibu(client, message)
-    
