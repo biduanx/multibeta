@@ -4,9 +4,9 @@ Amwang Kontol
 
 from ubot import *
 
-__MODULE__ = "Animasi3"
+__MODULE__ = "Toxic2"
 __HELP__ = """
- Bantuan Untuk Animasi3
+ Bantuan Untuk Toxic2
 
 • Perintah: <code>{0}per</code>
 • Penjelasan: coba aja sendiri.
