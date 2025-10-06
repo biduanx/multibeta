@@ -92,9 +92,7 @@ async def join_os(client, message):
     await ky.edit(
         f"<b>ʙᴇʀʜᴀꜱɪʟ ᴊᴏɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ</b>\n<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
     )
-    await sleep(1)
     await client.vc.set_is_mute(True)
-    await ky.delete()
 
 
 
@@ -113,5 +111,3 @@ async def turun_os(client, message):
     if chat_id:
         msg += f"<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
     await ky.edit(msg)
-    await sleep(1)
-    await ky.delete()
