@@ -1,11 +1,3 @@
-# Copas Teriak Copas MONYET
-# Gay Teriak Gay Anjeng
-# @Rizzvbss | @Kenapanan
-# Kok Bacot
-# © @KynanSupport
-# FULL MONGO NIH JING FIX MULTI CLIENT
-
-
 import asyncio
 import random
 
@@ -48,7 +40,6 @@ async def hmmm(client, message):
     mg = await message.reply(
         "┈┈╱▔▔▔▔▔╲┈┈┈HM┈HM\n┈╱┈┈╱▔╲╲╲▏┈┈┈HMMM\n╱┈┈╱━╱▔▔▔▔▔╲━╮┈┈\n▏┈▕┃▕╱▔╲╱▔╲▕╮┃┈┈\n▏┈▕╰━▏▊▕▕▋▕▕━╯┈┈\n╲┈┈╲╱▔╭╮▔▔┳╲╲┈┈┈\n┈╲┈┈▏╭━━━━╯▕▕┈┈┈\n┈┈╲┈╲▂▂▂▂▂▂╱╱┈┈┈\n┈┈┈┈▏┊┈┈┈┈┊┈┈┈╲\n┈┈┈┈▏┊┈┈┈┈┊▕╲┈┈╲\n┈╱▔╲▏┊┈┈┈┈┊▕╱▔╲▕\n┈▏┈┈┈╰┈┈┈┈╯┈┈┈▕▕\n┈╲┈┈┈╲┈┈┈┈╱┈┈┈╱┈╲\n┈┈╲┈┈▕▔▔▔▔▏┈┈╱╲╲╲▏\n┈╱▔┈┈▕┈┈┈┈▏┈┈▔╲▔▔\n┈╲▂▂▂╱┈┈┈┈╲▂▂▂╱┈ ",
     )
-
 
 
 async def kntl(client, message):
@@ -175,7 +166,7 @@ async def piciieess(client, message):
     await e.edit("Aku Ange 😫")
     await asyncio.sleep(2)
     await e.edit("Ayuukk Picies Yang 🤤")
-
+    await e.delete()   
 
 async def lipkoll(client, message):
     e = await message.edit("Ayanggg 😖")
@@ -183,7 +174,7 @@ async def lipkoll(client, message):
     await e.edit("Kangeeen 👉👈")
     await asyncio.sleep(2)
     await e.edit("Pingiinn Slipkool Yaaang 🥺👉👈")
-
+    await e.delete()   
 
 async def nakall(client, message):
     e = await message.edit("Ayanggg ih🥺")
@@ -193,7 +184,7 @@ async def nakall(client, message):
     await e.edit("Aku Gak Like Ayang 😠")
     await asyncio.sleep(2)
     await e.edit("Pokoknya Aku Gak Like Ih 😠")
-
+    await e.delete()   
 
 async def peace(client: Client, message: Message):
     await message.reply(
@@ -284,7 +275,7 @@ async def kocokk(client, message):
     await e.edit("**CROOTTTT AAAHHH.....**")
     await asyncio.sleep(0.2)
     await e.edit("AHHH ENAKKKKK SAYANGGGG🥵🥵**")
-
+    await e.delete()   
 
 async def anjg(client, message):
     await message.reply(
@@ -302,3 +293,4 @@ async def nahlove(client, message):
     typew = await message.reply("`\n(\\_/)`" "`\n(●_●)`" "`\n />💖 *Ini Buat Kamu`")
     await asyncio.sleep(2)
     await typew.edit("`\n(\\_/)`" "`\n(●_●)`" "`\n💖<\\  *Tapi Bo'ong`")
+    await typew.delete()   
