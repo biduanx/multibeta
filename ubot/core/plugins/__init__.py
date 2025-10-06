@@ -1,4 +1,3 @@
-from ubot.core.plugins.ag import *
 from ubot.core.plugins.join import *
 from ubot.core.plugins.crbn import *
 from ubot.core.plugins.prof import *
