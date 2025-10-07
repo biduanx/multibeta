@@ -23,7 +23,7 @@ __HELP__ = """
 • Perintah: <code>{0}pirtual</code>
 • Penjelasan: coba aja sendiri.
 
-• Perintah: <code>{0}titid</code>
+• Perintah: <code>{0}pea</code>
 • Penjelasan: coba aja sendiri.
 """
 
@@ -49,6 +49,6 @@ async def _(client, message):
 async def _(client, message):
     await pirtual(client, message)
 
-@PY.UBOT("titid")
+@PY.UBOT("pea")
 async def _(client, message):
-    await titid(client, message)
+    await pea(client, message)
