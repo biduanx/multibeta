@@ -95,9 +95,10 @@ async def pirtual(client, message):
     await xx.edit("**HAHAHAHA**")
     await asyncio.sleep(1.5)
     await xx.edit("**KASIAN MANA MASIH MUDA**")
+    await asyncio.sleep(1)
     await xx.delete()    
 
-async def titid(client, message):
+async def pea(client, message):
     xx = await eor(message, "**CIEE**")
     await asyncio.sleep(1.5)
     await xx.edit("**YANG KATANYA TMN**")
