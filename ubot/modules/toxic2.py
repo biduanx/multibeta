@@ -22,6 +22,9 @@ __HELP__ = """
 
 • Perintah: <code>{0}pirtual</code>
 • Penjelasan: coba aja sendiri.
+
+• Perintah: <code>{0}titid</code>
+• Penjelasan: coba aja sendiri.
 """
 
 
@@ -45,3 +48,7 @@ async def _(client, message):
 @PY.UBOT("pirtual")
 async def _(client, message):
     await pirtual(client, message)
+
+@PY.UBOT("titid")
+async def _(client, message):
+    await titid(client, message)
