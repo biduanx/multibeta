@@ -8,26 +8,46 @@ __MODULE__ = "Toxic"
 __HELP__ = """
  Bantuan Untuk Toxic
 
-• Perintah: <code>{0}pp</code>
+• Perintah: <code>{0}title</code>
 • Penjelasan: Untuk caci maki manusia gak tau diri.
 
-• Perintah: <code>{0}kn</code>
+• Perintah: <code>{0}wah</code>
 • Penjelasan: Untuk caci maki manusia gak tau diri.
 
-• Perintah: <code>{0}mk</code>
+• Perintah: <code>{0}ewe</code>
+• Penjelasan: Untuk caci maki manusia gak tau diri.
+
+• Perintah: <code>{0}texas</code>
+• Penjelasan: Untuk caci maki manusia gak tau diri.
+
+• Perintah: <code>{0}item</code>
+• Penjelasan: Untuk caci maki manusia gak tau diri.
+
+• Perintah: <code>{0}memeg</code>
 • Penjelasan: Untuk caci maki manusia gak tau diri.
 """
 
 
-
-@PY.UBOT("pp")
+@PY.UBOT("title")
 async def _(client, message):
-    await pp_jing(client, message)
-
-@PY.UBOT("kn")
+    await title(client, message)
+    
+@PY.UBOT("wah")
 async def _(client, message):
-    await kn_jing(client, message)
-
-@PY.UBOT("mk")
+    await wah(client, message)    
+    
+@PY.UBOT("ewe")
 async def _(client, message):
-    await mk_jing(client, message)
+    await ewe(client, message)    
+    
+@PY.UBOT("texas")
+async def _(client, message):
+    await texas(client, message)    
+    
+@PY.UBOT("item")
+async def _(client, message):
+    await item(client, message)   
+    
+@PY.UBOT("memeg")
+async def _(client, message):
+    await memeg(client, message)               
