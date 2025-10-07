@@ -50,13 +50,13 @@ async def jablay(client, message):
     await e.delete()    
     
 async def ganteng(client, message):
-    e = await message.edit("**Paling Bener Emang**")
+    e = await message.edit("**Cuma Mau Bilang**")
     await asyncio.sleep(2)
-    await e.edit("**Yg Mulia Zp Paling**")
+    await e.edit("**Kalo Yg Mulia Zp**")
     await asyncio.sleep(2)
-    await e.edit("**GANTENG 😎**")
+    await e.edit("**GANTENG BGT😎**")
     await asyncio.sleep(2)
-    await e.edit("**CIHUYY 😜**")
+    await e.edit("**CIHUYY 😭**")
     await asyncio.sleep(1)
     await e.delete()    
     
