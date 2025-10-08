@@ -3,10 +3,7 @@ from ubot import *
 __MODULE__ = "Convert"
 __HELP__ = """
  Bantuan Untuk Convert
-
-• Perintah : <code>{0}toanime</code> [balas foto/sticker]
-• Penjelasan : Merubah gambar ke anime.
-
+ 
 • Perintah : <code>{0}toimg</code> [balas stiker/gif]
 • Penjelasan : Merubah stiker/gif ke foto.
 
@@ -19,18 +16,9 @@ __HELP__ = """
 • Perintah : <code>{0}toaudio</code> [balas video]
 • Penjelasan : Merubah video menjadi audio mp3.
 
-• Perintah : <code>{0}efek</code> [efek kode - nama efek]
-  <b>• efek kode:</b>  <code>bengek</code> <code>robot</code> <code>jedug</code> <code>fast</code> <code>echo</code>
-• Penjelasan : Merubah suara voice note.
-  
 • Perintah : <code>{0}curi</code> [balas pesan]
 • Penjelasan : Untuk mencuri media timer, cek pesan tersimpan
 """
-
-
-@PY.UBOT("toanime")
-async def _(client, message):
-    await convert_anime(client, message)
 
 
 @PY.UBOT("toimg")
@@ -51,11 +39,6 @@ async def _(client, message):
 @PY.UBOT("toaudio")
 async def _(client, message):
     await convert_audio(client, message)
-
-
-@PY.UBOT("efek")
-async def _(client, message):
-    await convert_efek(client, message)
 
 
 @PY.UBOT("curi")
