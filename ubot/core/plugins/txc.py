@@ -51,7 +51,7 @@ async def wah(client, message):
     await asyncio.sleep(2)
     await xx.edit("**Oh iya, Kan lo badut 🤡**")
     await asyncio.sleep(2)
-    await xx.edit("`Kesannya lo ngasih kita hiburan.`")
+    await xx.edit("**Kesannya lo ngasih kita hiburan.**")
     await asyncio.sleep(2)
     await xx.edit("**Kasian badut🤡, Ga di hargain, Eh lampiaskan nya ke Tele, Wkwkwk**")
     await asyncio.sleep(2.5)
