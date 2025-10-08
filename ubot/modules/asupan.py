@@ -7,9 +7,6 @@ __HELP__ = """
 • Perintah :  <code>{0}asupan</code>
 • Penjelasan :  Untuk mengirim video asupan random.
 
-• Perintah : <code>{0}bokep</code>
-• Penjelasan : Untuk mengirim video bokep random.
-
 • Perintah :  <code>{0}cewe</code>
 • Penjelasan :  Untuk mengirim photo cewek random.
 
@@ -41,11 +38,6 @@ async def _(client, message):
 @PY.UBOT("anime")
 async def _(client, message):
     await photo_anime(client, message)
-
-
-@PY.UBOT("bokep")
-async def _(client, message):
-    await video_bokep(client, message)
 
 
 @PY.UBOT("pap")
