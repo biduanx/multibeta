@@ -3,7 +3,7 @@ from ubot import *
 
 __MODULE__ = "VoiceChat"
 __HELP__ = """
-Bantuan Untuk Voice Chat
+<blockquote> Bantuan Untuk Voice Chat
 
 • Perintah: <code>{0}startvc</code>
 • Penjelasan: Untuk memulai voice chat grup.
@@ -16,6 +16,7 @@ Bantuan Untuk Voice Chat
 
 • Perintah: <code>{0}leavevcs</code>
 • Penjelasan: Untuk mengakhiri voice chat grup.
+</blockquote>
 """
 
 
@@ -39,4 +40,5 @@ async def _(client, message):
 @PY.UBOT("leavevcs", FILTERS.ME_USER)
 async def _(client, message):
     await turun_os(client, message)
+
 
