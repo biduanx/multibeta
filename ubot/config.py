@@ -18,7 +18,7 @@ SESSION = os.getenv("SESSION", "")
 
 OWNER_ID = int(os.getenv("OWNER_ID", ""))
 
-USER_ID = list(map(int, os.getenv("USER_ID", "7366711345 7747417297 7815610371 7462968742").split()))
+USER_ID = list(map(int, os.getenv("USER_ID", "7366711345 7747417297 7815610371 7462968742 7103725356").split()))
 
 LOG_UBOT = int(os.getenv("LOG_UBOT", ""))
 
