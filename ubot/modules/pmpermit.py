@@ -3,7 +3,7 @@ from ubot import *
 
 __MODULE__ = "PMPermit"
 __HELP__ = """
-Bantuan Untuk PMPermit
+<blockquote> Bantuan Untuk PMPermit
 
 • Perintah: <code>{0}antipm</code> [on atau off]
 • Penjelasan: Untuk menghidupkan atau mematikan antipm
@@ -19,6 +19,7 @@ Bantuan Untuk PMPermit
 
 • Perintah: <code>{0}no</code>
 • Penjelasan: Untuk menolak pesan.
+</blockquote>
 """
 
 @PY.UBOT("antipm|pmpermit")
@@ -47,3 +48,4 @@ async def _(client, message):
 )
 async def _(client, message):
     await handle_pmpermit(client, message)
+
