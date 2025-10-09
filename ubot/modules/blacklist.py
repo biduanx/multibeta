@@ -2,7 +2,7 @@ from ubot import *
 
 __MODULE__ = "Blacklist"
 __HELP__ = """
- Bantuan Untuk Blacklist
+<blockquote> Bantuan Untuk Blacklist
 
 • Perintah : <code>{0}rallbl</code>
 • Penjelasan : Menghapus semua anti gcast
@@ -15,6 +15,7 @@ __HELP__ = """
 
 • Perintah : <code>{0}listbl</code>
 • Penjelasan : Melihat daftar grup anti Gcast.
+</blockquote>
 """
 
 
