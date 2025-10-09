@@ -192,3 +192,33 @@ async def convert_efek(client, message):
         await Tm.edit(
             f"Silakan balas audio.\n\nContoh : <code>{0}efek bengek</code>[balas audio]"
         )
+
+async def colong_cmn(client, message):
+    dia = message.reply_to_message
+    if not dia:
+        return
+    anjing = dia.caption or ""
+    Tm = await message.reply("Processing......")
+    await Tm.delete()
+    if dia.photo:
+        anu = await client.download_media(dia)
+        await client.send_photo("me", anu, anjing)
+        os.remove(anu)
+    if dia.video:
+        anu = await client.download_media(dia)
+        await client.send_video("me", anu, anjing)
+        os.remove(anu)
+    if dia.audio:
+        anu = await client.download_media(dia)
+        await client.send_audio("me", anu, anjing)
+        os.remove(anu)
+    if dia.voice:
+        anu = await client.download_media(dia)
+        await client.send_voice("me", anu, anjing)
+        os.remove(anu)
+    if dia.document:
+        anu = await client.download_media(dia)
+        await client.send_document("me", anu, anjing)
+        os.remove(anu)
+    else:
+        await client.send_message("me", "pap")
