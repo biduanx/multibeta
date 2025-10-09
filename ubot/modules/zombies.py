@@ -2,10 +2,11 @@ from ubot import *
 
 __MODULE__ = "Zombies"
 __HELP__ = """
-Bantuan Untuk Zombies
+<blockquote> Bantuan Untuk Zombies
 
 • Perintah: <code>{0}zombies</code>
 • Penjelasan: Untuk mengeluarkan akun depresi digrup anda.
+</blockquote>
 """
 
 @PY.UBOT("zombies")
