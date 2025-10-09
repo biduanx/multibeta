@@ -2,13 +2,14 @@ from ubot import *
 
 __MODULE__ = "Info"
 __HELP__ = """
- Bantuan Untuk Info
+<blockquote> Bantuan Untuk Info
 
 • Perintah : <code>{0}info</code> [user_id/username/balas pesan]
 • Penjelasan : Untuk melihat informasi pengguna.
 
 • Perintah : <code>{0}cinfo</code> [user_id/username/balas pesan]
 • Penjelasan : Untuk melihat informasi obrolan.
+</blockquote>
 """
 
 
