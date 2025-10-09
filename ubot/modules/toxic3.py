@@ -6,7 +6,7 @@ from ubot import *
 
 __MODULE__ = "Toxic3"
 __HELP__ = """
- Bantuan Untuk Toxic3
+<blockquote> Bantuan Untuk Toxic3
 
 • Perintah: <code>{0}aliansi</code>
 • Penjelasan: coba sendiri mek.
@@ -28,6 +28,7 @@ __HELP__ = """
 
 • Perintah: <code>{0}war</code>
 • Penjelasan: coba sendiri mek.
+</blockquote>
 """
 
 
