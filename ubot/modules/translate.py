@@ -2,7 +2,7 @@ from ubot import *
 
 __MODULE__ = "Translate"
 __HELP__ = """
-Bantuan Untuk Translate
+<blockquote> Bantuan Untuk Translate
 
 • Perintah: <code>{0}tr</code> [reply/text]
 • Penjelasan: Untuk menerjemahkan text dengan kode negara yang diinginkan.
@@ -12,6 +12,7 @@ Bantuan Untuk Translate
 
 • Perintah: <code>{0}tts</code> [reply/text]
 • Penjelasan: Untuk menerjemahkan text dengan kode negara yang diinginkan serta merubahnya menjadi pesan suara.
+</blockquote>
 """
 
 
