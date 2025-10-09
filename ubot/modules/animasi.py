@@ -2,7 +2,7 @@ from ubot import *
 
 __MODULE__ = "Animasi"
 __HELP__ = """
- Bantuan Untuk Animasi
+<blockquote> Bantuan Untuk Animasi
 
 • Perintah: <code>{0}kntl or {0}penis</code>
 • Penjelasan: Coba sendiri.
@@ -21,6 +21,7 @@ __HELP__ = """
 
 • Perintah:  <code>{0}kocok</code>
 • Penjelasan:  Coba sendiri.
+</blockquote>
 """
 
 """
@@ -110,3 +111,4 @@ async def _(client, message):
 @PY.UBOT("penis|titid")
 async def _(client, message):
     await pns(client, message)
+
