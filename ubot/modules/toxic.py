@@ -6,7 +6,7 @@ from ubot import *
 
 __MODULE__ = "Toxic"
 __HELP__ = """
- Bantuan Untuk Toxic
+<blockquote> Bantuan Untuk Toxic
 
 • Perintah: <code>{0}title</code>
 • Penjelasan: Untuk caci maki manusia gak tau diri.
@@ -25,6 +25,7 @@ __HELP__ = """
 
 • Perintah: <code>{0}memeg</code>
 • Penjelasan: Untuk caci maki manusia gak tau diri.
+</blockquote>
 """
 
 
@@ -51,3 +52,4 @@ async def _(client, message):
 @PY.UBOT("memeg")
 async def _(client, message):
     await memeg(client, message)               
+
