@@ -2,7 +2,7 @@ from ubot import *
 
 __MODULE__ = "Profile"
 __HELP__ = """
-Bantuan Untuk Profile
+<blockquote> Bantuan Untuk Profile
 
 • Perintah: <code>{0}adminlist</code>
 • Penjelasan: Untuk melihat status admin grup anda.
@@ -21,6 +21,7 @@ Bantuan Untuk Profile
 
 • Perintah: <code>{0}unblock</code> [query]
 • Penjelasan: Untuk buka blokir pengguna.
+</blockquote>
 """
 
 
