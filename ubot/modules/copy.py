@@ -6,7 +6,7 @@ __HELP__ = """
 
 • Perintah : <code>{0}copy</code> [link]
 • Penjelasan : Untuk mengambil pesan melalui link telegram.
-<blockquote>
+</blockquote>
   """
 
 
