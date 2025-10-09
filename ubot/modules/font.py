@@ -2,10 +2,11 @@ from ubot import *
 
 __MODULE__ = "Font"
 __HELP__ = """
- Bantuan Untuk Font
+<blockquote> Bantuan Untuk Font
 
 • Perintah : <code>{0}font</code> [balas pesan/berikan teks]
 • Penjelasan : Untuk merubah teks dengan costum font.
+</blockquote>
 """
 
 
