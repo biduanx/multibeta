@@ -2,7 +2,7 @@ from ubot import *
 
 __MODULE__ = "Asupan"
 __HELP__ = """
- Bantuan Untuk Asupan
+<blockquote> Bantuan Untuk Asupan
 
 • Perintah :  <code>{0}asupan</code>
 • Penjelasan :  Untuk mengirim video asupan random.
@@ -18,6 +18,7 @@ __HELP__ = """
 
 • Perintah :  <code>{0}anime</code>
 • Penjelasan :  Untuk mengirim photo anime random.
+</blockquote>
 """
 
 @PY.UBOT("asupan")
