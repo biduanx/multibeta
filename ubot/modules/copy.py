@@ -2,10 +2,11 @@ from ubot import *
 
 __MODULE__ = "Copy"
 __HELP__ = """
- Bantuan Untuk Copy
+<blockquote> Bantuan Untuk Copy
 
 • Perintah : <code>{0}copy</code> [link]
 • Penjelasan : Untuk mengambil pesan melalui link telegram.
+<blockquote>
   """
 
 
