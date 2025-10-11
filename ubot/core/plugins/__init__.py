@@ -61,7 +61,7 @@ from ubot.core.plugins.txc3 import *
 from ubot.core.plugins.txc2 import *
 from ubot.core.plugins.crpt import *
 from ubot.core.plugins.bwt import *
-#from ubot.core.plugins.roas import *
+from ubot.core.plugins.ckhdm import *
 from ubot.core.plugins.staus import *
 from ubot.core.plugins.ttr import *
 from ubot.core.plugins.fn import *
