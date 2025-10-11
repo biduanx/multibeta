@@ -1,6 +1,6 @@
 from ubot import *
 
-__MODULE__ = "ᴄᴇᴋᴋʜᴏᴅᴀᴍ"
+__MODULE__ = "Cekkhodam"
 __HELP__ = """**「 BANTUAN UNTUK MODULE CEK KHODAM 」**
 
 𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .cekkhodam**
