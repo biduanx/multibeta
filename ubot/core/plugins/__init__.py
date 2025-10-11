@@ -18,7 +18,7 @@ from ubot.core.plugins.gpw import *
 from ubot.core.plugins.hlp import *
 from ubot.core.plugins.img import *
 from ubot.core.plugins.ivt import *
-from ubot.core.plugins.kng import *
+#from ubot.core.plugins.kng import *
 from ubot.core.plugins.lgo import *
 from ubot.core.plugins.lmt import *
 from ubot.core.plugins.mmf import *
