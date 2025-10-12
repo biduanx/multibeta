@@ -2,10 +2,10 @@ from ubot import *
 
 __MODULE__ = "ArtiNama"
 __HELP__ = """
-<blockquote>
-• Perintah : <code>{0}artinama</code>
-• Penjelasan : Untuk melihat arti nama.
-</blockquote>
+<blockquote><b>Bantuan Untuk Arti Nama</b>
+
+Perintah:
+<code>{0}artinama [nama]</code> → Mengartikan dengan nama</blockquote></b>
 """
 
 
