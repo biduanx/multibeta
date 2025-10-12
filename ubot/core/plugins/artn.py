@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from PyroUbot import *
+from ubot import *
 
 
 async def _(client, message):
