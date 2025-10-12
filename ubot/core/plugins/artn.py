@@ -3,7 +3,7 @@ import requests
 from ubot import *
 
 
-async def _(client, message):
+async def artinama(client, message):
     if len(message.command) < 2:
         await message.reply_text("<blockquote><b>**Gunakan perintah:** `/artinama nama`\n\nContoh: `/artinama putu`</blockquote></b>")
         return
