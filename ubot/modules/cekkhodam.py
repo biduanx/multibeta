@@ -2,7 +2,7 @@ from ubot import *
 
 __MODULE__ = "Cekmek"
 __HELP__ = """**BANTUAN UNTUK MODULE CEK**
-
+<blockquote>
 • Perintah: <code>{0}cekkhodam</code>
 • Penjelasan : Untuk melihat khodam nama orang.
 
