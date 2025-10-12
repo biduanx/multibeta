@@ -2,8 +2,8 @@ from ubot import *
 
 __MODULE__ = "ArtiNama"
 __HELP__ = """
-
-• Perintah : <code>{0}cekmemek</code>
+<blockquote>
+• Perintah : <code>{0}artinama</code>
 • Penjelasan : Untuk melihat arti nama.
 </blockquote>
 """
