@@ -18,7 +18,6 @@ from ubot.core.plugins.lmt import *
 from ubot.core.plugins.ocr import *
 from ubot.core.plugins.pgr import *
 from ubot.core.plugins.pyn import *
-from ubot.core.plugins.qrq import *
 from ubot.core.plugins.qtl import *
 from ubot.core.plugins.rts import *
 from ubot.core.plugins.sid import *
