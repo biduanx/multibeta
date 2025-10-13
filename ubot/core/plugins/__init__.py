@@ -16,14 +16,9 @@ from ubot.core.plugins.fnt import *
 from ubot.core.plugins.gcs import *
 from ubot.core.plugins.gpw import *
 from ubot.core.plugins.hlp import *
-from ubot.core.plugins.img import *
-from ubot.core.plugins.ivt import *
 from ubot.core.plugins.artn import *
 from ubot.core.plugins.lgo import *
 from ubot.core.plugins.lmt import *
-from ubot.core.plugins.mmf import *
-from ubot.core.plugins.mms import *
-from ubot.core.plugins.nts import *
 from ubot.core.plugins.ocr import *
 from ubot.core.plugins.opi import *
 from ubot.core.plugins.pgr import *
@@ -42,9 +37,7 @@ from ubot.core.plugins.stf import *
 from ubot.core.plugins.str import *
 from ubot.core.plugins.tll import *
 from ubot.core.plugins.tny import *
-from ubot.core.plugins.tph import *
 from ubot.core.plugins.trl import *
-#from ubot.core.plugins.tgrl import *
 from ubot.core.plugins.whs import *
 from ubot.core.plugins.wrt import *
 from ubot.core.plugins.ytp import *
@@ -65,6 +58,4 @@ from ubot.core.plugins.bwt import *
 from ubot.core.plugins.ckhdm import *
 from ubot.core.plugins.staus import *
 from ubot.core.plugins.ttr import *
-from ubot.core.plugins.fn import *
 from ubot.core.plugins.gubt import *
-from ubot.core.plugins.lck import *
