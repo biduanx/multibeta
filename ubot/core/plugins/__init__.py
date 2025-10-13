@@ -1,5 +1,4 @@
 from ubot.core.plugins.crbn import *
-from ubot.core.plugins.ip import *
 from ubot.core.plugins.adb import *
 from ubot.core.plugins.adm import *
 from ubot.core.plugins.alv import *
