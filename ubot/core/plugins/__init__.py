@@ -1,4 +1,3 @@
-from ubot.core.plugins.crpt import *
 from ubot.core.plugins.crbn import *
 from ubot.core.plugins.adb import *
 from ubot.core.plugins.adm import *
