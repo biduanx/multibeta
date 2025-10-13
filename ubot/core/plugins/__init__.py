@@ -21,7 +21,6 @@ from ubot.core.plugins.pyn import *
 from ubot.core.plugins.qtl import *
 from ubot.core.plugins.rts import *
 from ubot.core.plugins.sid import *
-from ubot.core.plugins.smd import *
 from ubot.core.plugins.smt import *
 from ubot.core.plugins.spm import *
 from ubot.core.plugins.spt import *
