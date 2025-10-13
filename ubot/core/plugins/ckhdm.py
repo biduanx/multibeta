@@ -14,13 +14,12 @@ async def cekkhodam(client, message):
             return random.choice(options)
 
         hasil = f"""
- <b>𖤐 ʜᴀsɪʟ ᴄᴇᴋ ᴋʜᴏᴅᴀᴍ:</b>
-╭───────────────────────
-├ •ɴᴀᴍᴀ : {nama}
-├ •ᴋʜᴏᴅᴀᴍɴʏᴀ : {pick_random(['lonte gurun', 'dugong', 'macan yatim', 'buaya darat', 'kanjut terbang', 'kuda kayang', 'janda salto', 'lonte alas', 'jembut singa', 'gajah terbang', 'kuda cacat', 'jembut pink', 'sabun bolong'])}
-├ •ɴɢᴇʀɪ ʙᴇᴛ ᴊɪʀ ᴋʜᴏᴅᴀᴍɴʏᴀ
-╰────────────────────────
-  **ɴᴇxᴛ ᴄᴇᴋ ᴋʜᴏᴅᴀᴍɴʏᴀ sɪᴀᴘᴀ ʟᴀɢɪ.**       
+<b>𖤐 ʜᴀsɪʟ ᴄᴇᴋ ᴋʜᴏᴅᴀᴍ:</b>
+ <blockquote>
+ •ɴᴀᴍᴀ : {nama}
+ •ᴋʜᴏᴅᴀᴍɴʏᴀ : {pick_random(['lonte gurun', 'dugong', 'macan yatim', 'buaya darat', 'kanjut terbang', 'kuda kayang', 'janda salto', 'lonte alas', 'jembut singa', 'gajah terbang', 'kuda cacat', 'jembut pink', 'sabun bolong'])}
+ •ɴɢᴇʀɪ ʙᴇᴛ ᴊɪʀ ᴋʜᴏᴅᴀᴍɴʏᴀ
+  **ɴᴇxᴛ ᴄᴇᴋ ᴋʜᴏᴅᴀᴍɴʏᴀ sɪᴀᴘᴀ ʟᴀɢɪ.**</blockquote>       
       """
         await message.edit(hasil)
     except BaseException:
