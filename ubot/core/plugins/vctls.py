@@ -90,7 +90,7 @@ async def join_os(client, message):
     except Exception as e:
         return await ky.edit(f"ERROR: {e}")
     await ky.edit(
-        f"<b>ʙᴇʀʜᴀꜱɪʟ ᴊᴏɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ</b>\n<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
+        f"<b>Tᴜᴀɴ ᴢᴘ ʙᴇʀʜᴀsɪʟ Jᴏɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ</b>\n<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
     )
     await sleep(1)
     await client.vc.set_is_mute(True)
@@ -108,7 +108,7 @@ async def turun_os(client, message):
 
     except Exception as e:
         return await ky.edit(f"<b>ERROR:</b> {e}")
-    msg = "<b>ʙᴇʀʜᴀꜱɪʟ ᴍᴇɴɪɴɢɢᴀʟᴋᴀɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ</b>\n"
+    msg = "<b>Tᴜᴀɴ ᴢᴘ ʙᴇʀʜᴀsɪʟ ᴛᴜʀᴜɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ</b>\n"
     if chat_id:
         msg += f"<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
     await ky.edit(msg)
