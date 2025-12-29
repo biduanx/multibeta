@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv(".env")
 
-DEVS = [7366711345, 7747417297, 7815610371]
+DEVS = [7366711345, 8342493610]
 
 KYNAN = list(map(int, os.getenv("KYNAN", "7366711345").split()))
 
@@ -18,7 +18,7 @@ SESSION = os.getenv("SESSION", "")
 
 OWNER_ID = int(os.getenv("OWNER_ID", ""))
 
-USER_ID = list(map(int, os.getenv("USER_ID", "7366711345 7747417297 7815610371 7462968742 7103725356").split()))
+USER_ID = list(map(int, os.getenv("USER_ID", "7366711345 8342493610").split()))
 
 LOG_UBOT = int(os.getenv("LOG_UBOT", ""))
 
