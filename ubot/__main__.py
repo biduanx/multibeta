@@ -11,7 +11,7 @@ async def start_ubot(user_id, _ubot):
     ubot_ = Ubot(**_ubot)
     try:
         await asyncio.wait_for(ubot_.start(), timeout=30)
-        await ubot_.join_chat("zplog")
+        await ubot_.join_chat("zpinlog")
         await ubot_.join_chat("haipalkon")
         await ubot_.join_chat("haipalkon")
         await ubot_.join_chat("anothrllv")
