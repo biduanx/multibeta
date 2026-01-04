@@ -32,14 +32,15 @@ async def _(client, message):
     await stop_vctools(client, message)
 
 
-@PY.UBOT("joinvcs", FILTERS.ME_USER)
+@PY.UBOT("jvc", FILTERS.ME_USER)
 async def _(client, message):
     await join_os(client, message)
 
 
-@PY.UBOT("leavevcs", FILTERS.ME_USER)
+@PY.UBOT("lvc", FILTERS.ME_USER)
 async def _(client, message):
     await turun_os(client, message)
+
 
 
 
