@@ -11,10 +11,10 @@ __HELP__ = """
 • Perintah: <code>{0}stopvc</code>
 • Penjelasan: Untuk mengakhiri voice chat grup.
 
-• Perintah: <code>{0}joinvcs</code>
+• Perintah: <code>{0}jvc</code>
 • Penjelasan: Untuk memulai voice chat grup.
 
-• Perintah: <code>{0}leavevcs</code>
+• Perintah: <code>{0}lvc</code>
 • Penjelasan: Untuk mengakhiri voice chat grup.
 </blockquote>
 """
@@ -40,5 +40,6 @@ async def _(client, message):
 @PY.UBOT("leavevcs", FILTERS.ME_USER)
 async def _(client, message):
     await turun_os(client, message)
+
 
 
