@@ -1,7 +1,7 @@
 from ubot import *
 
 
-__MODULE__ = "VoiceChat"
+__MODULE__ = "Vc"
 __HELP__ = """
 <blockquote> Bantuan Untuk Voice Chat
 
@@ -40,6 +40,7 @@ async def _(client, message):
 @PY.UBOT("lvc", FILTERS.ME_USER)
 async def _(client, message):
     await turun_os(client, message)
+
 
 
 
