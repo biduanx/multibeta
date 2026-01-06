@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv(".env")
 
-DEVS = [7366711345, 8342493610 8303301256]
+DEVS = [7366711345]
 
 KYNAN = list(map(int, os.getenv("KYNAN", "7366711345").split()))
 
