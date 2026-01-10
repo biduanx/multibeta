@@ -32,7 +32,7 @@ async def get_group_call(
 
 
 @PY.UBOT.on_message(filters.command(["jvcs"], cmd) & filters.me)
-async def joinvc(client, message):
+async def join_os(client, message):
     if message.from_user.id != client.me.id:
         ky = await message.reply("<code>Processing....</code>")
     else:
@@ -55,7 +55,7 @@ async def joinvc(client, message):
 
 
 @PY.UBOT.on_message(filters.command(["lvcs"], cmd) & filters.me)
-async def leavevc(client: Client, message: Message):
+async def turun_os(client: Client, message: Message):
     if message.from_user.id != client.me.id:
         ky = await message.reply("<code>Processing....</code>")
     else:
