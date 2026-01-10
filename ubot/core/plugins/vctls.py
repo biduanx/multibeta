@@ -31,7 +31,7 @@ async def get_group_call(
 
 
 
-@PY.UBOT.on_message(filters.command(["jvcs"], cmd) & filters.me)
+
 async def join_os(client, message):
     if message.from_user.id != client.me.id:
         ky = await message.reply("<code>Processing....</code>")
@@ -54,7 +54,7 @@ async def join_os(client, message):
 
 
 
-@PY.UBOT.on_message(filters.command(["lvcs"], cmd) & filters.me)
+
 async def turun_os(client: Client, message: Message):
     if message.from_user.id != client.me.id:
         ky = await message.reply("<code>Processing....</code>")
@@ -76,8 +76,8 @@ async def turun_os(client: Client, message: Message):
 
 
 
-@PY.UBOT.on_message(filters.command(["startvc"], cmd) & filters.me)
-async def opengc(client: Client, message: Message):
+
+async def start_vctools(client: Client, message: Message):
     flags = " ".join(message.command[1:])
     ky = await eor(message, "`Processing....`")
     vctitle = get_arg(message)
@@ -109,8 +109,8 @@ async def opengc(client: Client, message: Message):
 
 
 
-@PY.UBOT.on_message(filters.command(["stopvc"], cmd) & filters.me)
-async def end_vc_(client: Client, message: Message):
+
+async def stop_vctools(client: Client, message: Message):
     ky = await eor(message, "`Processing....`")
     message.chat.id
     if not (
