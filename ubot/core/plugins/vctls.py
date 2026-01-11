@@ -32,39 +32,44 @@ async def get_group_call(
 
 
 
-async def join_os(client, message):
-    kk = message.from_user.id
-    ky = await message.reply("<code>ᴍᴇᴍᴘʀᴏꜱᴇꜱ....</code>")
-    chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
-    with suppress(ValueError):
-        chat_id = int(chat_id)
-    try:
-        await client.vc.start(chat_id)
+async def join_os(event):
+    if len(event.text.split()) > 1:
+        chat = event.text.split()[1]
+        try:
+            chat = await event.client.parse_id(chat)
+        except Exception as e:
+            return await event.eor(get_string("vcbot_2").format(str(e)))
+    else:
+        chat = event.chat_id
+    Nan = Player(chat)
+    if not Nan.group_call.is_connected:
+        await Nan.group_call.join(chat)
+        await asyncio.sleep(1)
+        await event.eor(f"❏ **Berhasil Bergabung Voice Chat**\n└ **Chat ID:** `{chat}`")
+        await asyncio.sleep(1)
+        await Nan.group_call.set_is_mute(False)
+        await asyncio.sleep(1)
+        await Nan.group_call.set_is_mute(True)
 
-    except Exception as e:
-        return await ky.edit(f"ERROR: {e}")
-    await ky.edit(
-        f"<b>ʙᴇʀʜᴀꜱɪʟ ᴊᴏɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ</b>\n<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
-    )
-    await client.vc.set_is_mute(True)
 
 
-
-async def turun_os(client, message):
-    ky = await message.reply("<code>ᴍᴇᴍᴘʀᴏꜱᴇꜱ....</code>")
-    chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
-    with suppress(ValueError):
-        chat_id = int(chat_id)
-    try:
-      
-        await client.vc.stop()
-
-    except Exception as e:
-        return await ky.edit(f"<b>ERROR:</b> {e}")
-    msg = "<b>ʙᴇʀʜᴀꜱɪʟ ᴍᴇɴɪɴɢɢᴀʟᴋᴀɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ</b>\n"
-    if chat_id:
-        msg += f"<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
-    await ky.edit(msg)
+async def turun_os(event):
+    if len(event.text.split()) > 1:
+        chat = event.text.split()[1]
+        try:
+            chat = await event.client.parse_id(chat)
+        except Exception as e:
+            return await event.eor(get_string("vcbot_2").format(str(e)))
+    else:
+        chat = event.chat_id
+    jing = Player(chat)
+    await jing.group_call.leave()
+    await asyncio.sleep(1)
+    await event.eor(f"❏ **Berhasil Turun Voice Chat**\n└ **Chat ID:** `{chat}`")
+    if CLIENTS.get(chat):
+        del CLIENTS[chat]
+    if VIDEO_ON.get(chat):
+        del VIDEO_ON[chat]
 
 
 
