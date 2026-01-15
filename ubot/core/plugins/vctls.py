@@ -20,28 +20,30 @@ async def get_group_call(
     chat_peer = await client.resolve_peer(message.chat.id)
     if isinstance(chat_peer, (InputPeerChannel, InputPeerChat)):
         if isinstance(chat_peer, InputPeerChannel):
-            full_chat = (await client.invoke(GetFullChannel(channel=chat_peer))).full_chat
+            full_chat = (
+                await client.invoke(GetFullChannel(channel=chat_peer))
+            ).full_chat
         elif isinstance(chat_peer, InputPeerChat):
             full_chat = (
                 await client.invoke(GetFullChat(chat_id=chat_peer.chat_id))
             ).full_chat
         if full_chat is not None:
             return full_chat.call
-    await eor(message, f"**No group call Found** {err_msg}")
+    await message.edit(f"**No group call Found** {err_msg}")
     return False
 
 
-async def start_vctools(client, message):
+
+
+async def start_vctools(client: Client, message: Message):
     flags = " ".join(message.command[1:])
-    ky = await message.reply("<code>ᴍᴇᴍᴘʀᴏꜱᴇꜱ....</code>")
+    tex = await message.reply_text(message, "`Processing . . .`")
     vctitle = get_arg(message)
     if flags == enums.ChatType.CHANNEL:
         chat_id = message.chat.title
     else:
         chat_id = message.chat.id
-    args = (
-        f"<b>ᴏʙʀᴏʟᴀɴ ꜱᴜᴀʀᴀ ᴀᴋᴛɪꜰ</b>\n<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
-    )
+    args = f"**Started Group Call\n • **Chat ID** : `{chat_id}`"
     try:
         if not vctitle:
             await client.invoke(
@@ -51,7 +53,7 @@ async def start_vctools(client, message):
                 )
             )
         else:
-            args += f"\n<b>ᴛɪᴛʟᴇ : </b> <code>{vctitle}</code>"
+            args += f"\n • **Title:** `{vctitle}`"
             await client.invoke(
                 CreateGroupCall(
                     peer=(await client.resolve_peer(chat_id)),
@@ -59,23 +61,21 @@ async def start_vctools(client, message):
                     title=vctitle,
                 )
             )
-        await ky.edit(args)
+        await tex.edit(args)
     except Exception as e:
-        await ky.edit(f"<b>INFO:</b> `{e}`")
+        await tex.edit(f"**INFO:** `{e}`")
 
 
-
-async def stop_vctools(client, message):
-    ky = await message.reply("<code>ᴍᴇᴍᴘʀᴏꜱᴇꜱ....</code>")
-    message.chat.id
+async def stop_vctools(client: Client, message: Message):
+    chat_id = message.chat.id
     if not (
-        group_call := (await get_group_call(client, message, err_msg=", ᴋᴇꜱᴀʟᴀʜᴀɴ..."))
+        group_call := (
+            await get_group_call(client, message, err_msg=", group call already ended")
+        )
     ):
         return
     await client.invoke(DiscardGroupCall(call=group_call))
-    await ky.edit(
-        f"<b>ᴏʙʀᴏʟᴀɴ ꜱᴜᴀʀᴀ ᴅɪᴀᴋʜɪʀɪ</b>\n<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
-    )
+    await message.reply_text(f"Ended group call in **Chat ID** : `{chat_id}`")
 
 
 async def join_os(client: Client, message: Message):
