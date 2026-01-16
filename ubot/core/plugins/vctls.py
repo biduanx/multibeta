@@ -1,7 +1,7 @@
-from asyncio import sleep
-from contextlib import suppress
+import asyncio
 from random import randint
 from typing import Optional
+from contextlib import suppress
 
 from pyrogram import Client, enums, filters
 from pyrogram.raw.functions.channels import GetFullChannel
@@ -9,9 +9,9 @@ from pyrogram.raw.functions.messages import GetFullChat
 from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import Message
+from pyrogram.types import Message
 
 from ubot import *
-
 
 
 async def get_group_call(
@@ -20,28 +20,27 @@ async def get_group_call(
     chat_peer = await client.resolve_peer(message.chat.id)
     if isinstance(chat_peer, (InputPeerChannel, InputPeerChat)):
         if isinstance(chat_peer, InputPeerChannel):
-            full_chat = (await client.invoke(GetFullChannel(channel=chat_peer))).full_chat
+            full_chat = (
+                await client.invoke(GetFullChannel(channel=chat_peer))
+            ).full_chat
         elif isinstance(chat_peer, InputPeerChat):
             full_chat = (
                 await client.invoke(GetFullChat(chat_id=chat_peer.chat_id))
             ).full_chat
         if full_chat is not None:
             return full_chat.call
-    await eor(message, f"ɴᴏ ɢʀᴏᴜᴘ ᴄᴀʟʟ ꜰᴏᴜɴᴅ {err_msg}")
+    await message.edit(f"**No group call Found** {err_msg}")
     return False
-
-
-async def start_vctools(client, message):
+    
+async def start_vctools(client: Client, message: Message):
     flags = " ".join(message.command[1:])
-    ky = await message.reply("<code>ᴍᴇᴍᴘʀᴏꜱᴇꜱ....</code>")
+    tex = await message.reply_text(message, "`Processing . . .`")
     vctitle = get_arg(message)
     if flags == enums.ChatType.CHANNEL:
         chat_id = message.chat.title
     else:
         chat_id = message.chat.id
-    args = (
-        f"<b>ᴏʙʀᴏʟᴀɴ ꜱᴜᴀʀᴀ ᴀᴋᴛɪꜰ</b>\n<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
-    )
+    args = f"**Started Group Call\n • **Chat ID** : `{chat_id}`"
     try:
         if not vctitle:
             await client.invoke(
@@ -51,7 +50,7 @@ async def start_vctools(client, message):
                 )
             )
         else:
-            args += f"\n<b>ᴛɪᴛʟᴇ : </b> <code>{vctitle}</code>"
+            args += f"\n • **Title:** `{vctitle}`"
             await client.invoke(
                 CreateGroupCall(
                     peer=(await client.resolve_peer(chat_id)),
@@ -59,56 +58,55 @@ async def start_vctools(client, message):
                     title=vctitle,
                 )
             )
-        await ky.edit(args)
+        await tex.edit(args)
     except Exception as e:
-        await ky.edit(f"<b>INFO:</b> `{e}`")
-
-
-
-async def stop_vctools(client, message):
-    ky = await message.reply("<code>ᴍᴇᴍᴘʀᴏꜱᴇꜱ....</code>")
-    message.chat.id
+        await tex.edit(f"**INFO:** `{e}`")
+        
+async def stop_vctools(client: Client, message: Message):
+    chat_id = message.chat.id
     if not (
-        group_call := (await get_group_call(client, message, err_msg=", ᴋᴇꜱᴀʟᴀʜᴀɴ..."))
+        group_call := (
+            await get_group_call(client, message, err_msg=", group call already ended")
+        )
     ):
         return
     await client.invoke(DiscardGroupCall(call=group_call))
-    await ky.edit(
-        f"<b>ᴏʙʀᴏʟᴀɴ ꜱᴜᴀʀᴀ ᴅɪᴀᴋʜɪʀɪ</b>\n<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
-    )
+    await message.reply_text(f"Ended group call in **Chat ID** : `{chat_id}`")
 
-
-async def join_os(client, message):
-    kk = message.from_user.id
-    ky = await message.reply("<code>ᴍᴇᴍᴘʀᴏꜱᴇꜱ....</code>")
+async def join_os(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
+    if message.from_user.id != client.me.id:
+        Man = await message.reply("`Otw Naik...`")
+    else:
+        Man = await message.edit("`Otw Naik....`")
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
-        await client.vc.start(chat_id)
-
+        await client.group_call.start(chat_id)
     except Exception as e:
-        return await ky.edit(f"ERROR: {e}")
-    await ky.edit(
-        f"<b>berhasil join voice chat</b>\n<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
-    )
-    await client.vc.set_is_mute(True)
-    await ky.delete()
+        return await Man.edit(f"**ERROR:** `{e}`")
+    await Man.edit(f"**Berhasil Join Ke Obrolan Group**\n└ **Chat ID:** `{chat_id}`")
+    await asyncio.sleep(5)
+    await client.group_call.set_is_mute(True)
+    await asyncio.sleep(3)
+    await Man.delete()
 
-
-async def turun_os(client, message):
-    ky = await message.reply("<code>ᴍᴇᴍᴘʀᴏꜱᴇꜱ....</code>")
+async def turun_os(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
+    if message.from_user.id != client.me.id:
+        Man = await message.reply("`Turun Dulu...`")
+    else:
+        Man = await message.edit("`Turun Dulu....`")
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
-      
-        await client.vc.stop()
-
+        await client.group_call.stop()
     except Exception as e:
-        return await ky.edit(f"<b>ERROR:</b> {e}")
-    msg = "<b>berhasil turun voice chat</b>\n"
+        return await edit_or_reply(message, f"**ERROR:** `{e}`")
+    msg = "**Berhasil Turun dari Obrolan Suara**"
     if chat_id:
-        msg += f"<b>ᴄʜᴀᴛ : </b><code>{message.chat.title}</code>"
-    await ky.edit(msg)
-    await ky.delete() 
+        msg += f"\n└ **Chat ID:** `{chat_id}`"
+    await Man.edit(msg)
+    await asyncio.sleep(3)
+    await Man.delete(msg)
+    
