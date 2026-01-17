@@ -11,8 +11,7 @@ def get_message(message):
     )
     return msg
 
-@PY.UBOT("bc")   
-async def _(c, m):
+async def bc(c, m):
     done = 0
     if len(m.command) != 2:
         await m.reply(f"**<emoji id =5929358014627713883>❌</emoji> mohon gunakan format: bc [gc adm pv] **")
