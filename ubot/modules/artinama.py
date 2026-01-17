@@ -1,6 +1,6 @@
 from ubot import *
 
-__MODULE__ = "ArtiNama"
+__MODULE__ = "Artinama"
 __HELP__ = """
 <blockquote><b>Bantuan Untuk Arti Nama</b>
 
