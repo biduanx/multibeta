@@ -56,7 +56,7 @@ async def broadcast_group_cmd(client, message):
                 except Exception:
                     pass
                 
-    return await msg.edit(f"**Successfully Sent Message To `{done}` Groups chat**.")
+    return await msg.edit(f"**💯Successfully Sent Message To `{done}` Groups chat**.")
 """
 
 broadcast_running = False
@@ -106,7 +106,7 @@ async def broadcast_group_cmd(client, message):
     if done > 0:
         await msg.edit(f"**Successfully Sent Message To `{done}` Groups chat. Failed: `{failed}`**.")
     else:
-        await msg.edit(f"**Pesan Broadcast Berhasil Dibatalkan**.")
+        await msg.edit(f"**❌Pesan Broadcast Berhasil Dibatalkan**.")
 
 
 async def cancel_broadcast(client, message):
