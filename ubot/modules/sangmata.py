@@ -1,6 +1,6 @@
 from ubot import *
 
-__MODULE__ = "Sangmata"
+__MODULE__ = "Sg"
 __HELP__ = """
 <blockquote> Bantuan Untuk Sangmata
 
