@@ -10,7 +10,8 @@ def get_message(message):
         else " ".join(message.command[1:])
     )
     return msg
-    
+
+@PY.UBOT("bc")   
 async def _(c, m):
     done = 0
     if len(m.command) != 2:
