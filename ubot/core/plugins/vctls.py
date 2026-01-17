@@ -82,14 +82,15 @@ async def join_os(client: Client, message: Message):
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
-        await client.group_call.start(chat_id)
+        await client.vc.start(chat_id)
     except Exception as e:
         return await Man.edit(f"**ERROR:** `{e}`")
     await Man.edit(f"**Berhasil Join Ke Obrolan Group**\n└ **Chat ID:** `{chat_id}`")
-    await asyncio.sleep(5)
-    await client.group_call.set_is_mute(True)
+    await asyncio.sleep(3)
+    await client.vc.set_is_mute(True)
     await asyncio.sleep(3)
     await Man.delete()
+    
 
 async def turun_os(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
@@ -100,7 +101,7 @@ async def turun_os(client: Client, message: Message):
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
-        await client.group_call.stop()
+        await client.vc.stop()
     except Exception as e:
         return await edit_or_reply(message, f"**ERROR:** `{e}`")
     msg = "**Berhasil Turun dari Obrolan Suara**"
@@ -109,4 +110,3 @@ async def turun_os(client: Client, message: Message):
     await Man.edit(msg)
     await asyncio.sleep(3)
     await Man.delete(msg)
-    
