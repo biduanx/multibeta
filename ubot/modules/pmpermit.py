@@ -1,7 +1,7 @@
 from ubot import *
 
 
-__MODULE__ = "PMPermit"
+__MODULE__ = "Antipm"
 __HELP__ = """
 <blockquote> Bantuan Untuk PMPermit
 
