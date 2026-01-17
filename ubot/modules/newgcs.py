@@ -8,4 +8,4 @@ __HELP__ = f"""
 """
 
 @PY.UBOT("bc")
-async def bc(c, m):
+async def _(c, m):
