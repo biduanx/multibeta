@@ -1,18 +1,29 @@
 async def zombies_cmd(client, message):
+    emo = Emo(client.me.id)
+    await emo.initialize()
     chat_id = message.chat.id
     deleted_users = []
     banned_users = 0
-    Tm = await message.reply("<code>Processing...</code>")
+    m = await eor(
+        message,
+        f"{emo.proses} <b>Sedang mencari akun-akun depresi ditinggal kawin...</b>",
+    )
+    await sleep(2)
+
     async for i in client.get_chat_members(chat_id):
         if i.user.is_deleted:
             deleted_users.append(i.user.id)
     if len(deleted_users) > 0:
         for deleted_user in deleted_users:
             try:
-                banned_users += 1
                 await message.chat.ban_member(deleted_user)
             except Exception:
                 pass
-        await Tm.edit(f"<b>Berhasil mengeluarkan {banned_users} akun terhapus</b>")
+            banned_users += 1
+        await m.edit(
+            f"{emo.sukses} <b>Berhasil mengkawinkan {banned_users} Akun Depresi Ditinggal Kawin.</b>"
+        )
     else:
-        await Tm.edit("<b>Tidak ada akun terhapus disini.</b>")
+        await m.edit(
+            f"{emo.gagal} <b>Saya tidak menemukan akun depresi di tinggal kawin.</b>"
+        )
