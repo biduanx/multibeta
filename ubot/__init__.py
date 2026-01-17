@@ -184,7 +184,10 @@ bot = Bot(
     bot_token=BOT_TOKEN,
 )
 
-
+for bot in bots:
+    if not hasattr(bot, "group_call"):
+        setattr(bot, "group_call", GroupCallFactory(bot).get_group_call())
+        
 from ubot.core.database import *
 from ubot.core.function import *
 from ubot.core.helpers import *
