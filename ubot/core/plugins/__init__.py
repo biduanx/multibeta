@@ -43,4 +43,4 @@ from ubot.core.plugins.ckhdm import *
 from ubot.core.plugins.staus import *
 from ubot.core.plugins.ttr import *
 from ubot.core.plugins.gubt import *
-from ubot.core.plugins.ngcs import *
+###from ubot.core.plugins.ngcs import *
