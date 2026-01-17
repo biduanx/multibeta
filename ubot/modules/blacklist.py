@@ -1,6 +1,6 @@
 from ubot import *
 
-__MODULE__ = "Blacklist"
+__MODULE__ = "Addbl"
 __HELP__ = """
 <blockquote> Bantuan Untuk Blacklist
 
