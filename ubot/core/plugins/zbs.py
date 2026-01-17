@@ -1,4 +1,4 @@
-async def zombies_cmd(client, message):
+async def _(client, message):
     emo = Emo(client.me.id)
     await emo.initialize()
     chat_id = message.chat.id
