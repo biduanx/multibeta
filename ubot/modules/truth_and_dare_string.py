@@ -4,7 +4,7 @@ TRUTH = [
     "Berapa jumlah mantan lu?",
     "Ceritakan masalah paling kamu ingat saat di sekolah",
     "Pilih cowo ganteng atau cowo kaya? Tapi ga ganteng",
-    "Apabila kamu cewe bersedia kah untuk menjadi pacar owner ku @Usern4meDoesNotExist404",
+    "Apabila kamu cewe bersedia kah untuk menjadi pacar owner ku @akuzpv2",
     "Momen paling paling terbaik menurut lu selama idup apa?",
     "Sebutkan 100 hal tentang teman kamu",
     "Pilih cewe cantik atau cewe jadi²an?",
@@ -15,7 +15,7 @@ TRUTH = [
     "Coba tag orang yang paling kamu sayang disini.",
     "Hayoo, kapan terakhir kali kamu anu?",
     "Ceritakan kisah idup lu :')",
-    "si @Usern4meDoesNotExist404 menurut ku dia ganteng, coba deh kamu chat, trus ajak pacaran hehe ⚠️WARNING ini khusus cewe ya!",
+    "si @akuzpv2 menurut ku dia ganteng, coba deh kamu chat, trus ajak pacaran hehe ⚠️WARNING ini khusus cewe ya!",
   
 ]
 
@@ -69,7 +69,7 @@ DARE = [
      "Ungkapkan siapa cinta sejatimu.",
      "Kirim tangkapan layar galeri Anda.",
      "Jadikan gambar gebetanmu sebagai wallpaper chat.",
-     "Bilang ke @Usern4meDoesNotExist404 bahwa dia ganteng",
+     "Bilang ke @akuzpv2 bahwa dia ganteng",
 ]
 
 AP = ["Iya", 
