@@ -12,7 +12,7 @@ import traceback
 from base64 import b64decode
 from ubot import *
 
-__MODULE__ = "tiktok"
+__MODULE__ = "Tiktok"
 __HELP__ = """
  <b>Bantuan Untuk Tiktok</b>
 
