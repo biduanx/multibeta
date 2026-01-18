@@ -1,7 +1,7 @@
 import asyncio
 import random
 
-from PyroUbot.modules import truth_and_dare_string as tod
+from ubot.modules import truth_and_dare_string as tod
 
 from ubot import *
 
