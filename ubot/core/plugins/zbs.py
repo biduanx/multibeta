@@ -1,6 +1,4 @@
 async def _(client, message):
-    emo = Emo(client.me.id)
-    await emo.initialize()
     chat_id = message.chat.id
     deleted_users = []
     banned_users = 0
