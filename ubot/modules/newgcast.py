@@ -3,13 +3,12 @@ from pyrogram.enums import ChatType, ChatMemberStatus
 from ubot.core.database.saved import get_chat
 
 
-__MODULE__ = "Gcastnew"
-__HELP__ = f"""
-<b>『 bantuan untuk gcastnew 』</b>
+__MODULE__ = "Gcast2"
+__HELP__ = """
+<blockquote> Bantuan Untuk Gcast2
 
-  <b>• perintah:</b> <code>.bc</code> gc balas ke pesan
-  <b>• penjelasan:</b> gc[grup], adm[khusus admin], pv [private chat]
-
+• Perintah : <code>{0}bc</code> [gc balas ke pesan]
+• Penjelasan : gc grup, adm khusus admin, pv private chat.
 """
 
 def get_message(message):
