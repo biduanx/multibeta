@@ -51,7 +51,7 @@ async def _(c, m):
 
             await Haku.edit(
                 f"<emoji id =5888974760720732797>💥</emoji> **berhasil mengirim ke {done} grup** <emoji id=5798623990436074786>✅</emoji>\n\n"
-                f"<emoji id =5888974760720732797>💥</emoji> **powered by ©GayoUbot** <emoji id =5895583431194054511>🌟</emoji>\n")
+                f"<emoji id =5888974760720732797>💥</emoji> **powered by ©zp-ubot** <emoji id =5895583431194054511>🌟</emoji>\n")
 
         elif m.command[1] == "pv":
             Haku = await m.reply(f"<emoji id=6010111371251815589>⏳</emoji> **sedang memproses**...")
@@ -68,7 +68,7 @@ async def _(c, m):
 
             await Haku.edit(
                 f"<emoji id =5888974760720732797>💥</emoji> **berhasil mengirim ke {done} chat pribadi** <emoji id=5798623990436074786>✅</emoji>\n\n"
-                f"<emoji id =5888974760720732797>💥</emoji> **powered by ©GayoUbot** <emoji id =5895583431194054511>🌟</emoji>\n")
+                f"<emoji id =5888974760720732797>💥</emoji> **powered by ©zp-ubot** <emoji id =5895583431194054511>🌟</emoji>\n")
 
         elif m.command[1] == "adm":
             Haku = await m.reply(f"<emoji id=6010111371251815589>⏳</emoji> **sedang memproses**...")
@@ -85,7 +85,7 @@ async def _(c, m):
                         pass
             await Haku.edit(
                 f"<emoji id =5888974760720732797>💥</emoji> **berhasil mengirim ke {done} khusus admin** <emoji id=5798623990436074786>✅</emoji>\n\n"
-                f"<emoji id =5888974760720732797>💥</emoji> **powered by ©GayoUbot** <emoji id =5895583431194054511>🌟</emoji>\n")
+                f"<emoji id =5888974760720732797>💥</emoji> **powered by ©zp-ubot** <emoji id =5895583431194054511>🌟</emoji>\n")
 
 
     except IndexError:
