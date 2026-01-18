@@ -78,7 +78,7 @@ async def pinterest(client, message):
 
         best_media_url = pinterest_downloader.best_sizes[0]["url"]
         file_extension = best_media_url.split('.')[-1]
-        caption = f"• Powered by WannFyy\n\nFile type: {file_extension.capitalize()}"
+        caption = f"• Powered by @akuzpv2\n\nFile type: {file_extension.capitalize()}"
         
         if any('.mp4' in best_media_url for media in pinterest_downloader.best_sizes):
             await message.reply_video(best_media_url, caption=caption)
