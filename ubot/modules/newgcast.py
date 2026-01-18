@@ -3,7 +3,7 @@ from pyrogram.enums import ChatType, ChatMemberStatus
 from ubot.core.database.saved import get_chat
 
 
-__MODULE__ = "gcast new"
+__MODULE__ = "Gcastnew"
 __HELP__ = f"""
 <b>『 bantuan untuk gcastnew 』</b>
 
