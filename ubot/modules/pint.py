@@ -6,7 +6,7 @@ import traceback
 from pyrogram import Client
 from ubot import *
 
-__MODULE__ = "pinterest"
+__MODULE__ = "Pint"
 __HELP__ = """
  <b>Bantuan Untuk Pinterest</b>
 
