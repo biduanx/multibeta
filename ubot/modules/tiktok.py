@@ -108,7 +108,7 @@ async def tiktok(client, message):
         video_id = open('video.mp4', 'rb')
 
         if video:         
-            await client.send_video(message.chat.id, video_id, caption="• Powered by WannFyy")  
+            await client.send_video(message.chat.id, video_id, caption="• Powered by @akuzpv2")  
         else:
             await message_wait.edit("Maaf, saya tidak dapat mendapatkan informasi tentang file ini.\nCoba lagi nanti atau kirim tautan lain.")
 
