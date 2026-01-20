@@ -79,7 +79,7 @@ async def leavevc(client: Client, message: Message):
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
-        await client.group_call.stop()
+        await client.vc.stop()
     except Exception as e:
         return await meira.edit(message, f"**ERROR:** `{e}`")
     msg = (f"▢ <b>ʙᴇʀʜᴀsɪʟ ᴍᴇɴɪɴɢɢᴀʟᴋᴀɴ</b>\n<b>ᴄʜᴀᴛ :</b><code>{chat_id}</code>")
