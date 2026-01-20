@@ -59,7 +59,7 @@ async def joinvc(client: Client, message: Message):
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
-        await client.group_call.start(chat_id)
+        await client.vc.start(chat_id)
     except Exception as e:
         return await meira.edit(f"ᴇʀʀᴏʀ `{e}`")
     await meira.edit(f"▢ <b>ʙᴇʀʜᴀsɪʟ ᴊᴏɪɴ ᴠᴄɢ</b>\n<b>ᴄʜᴀᴛ :</b><code>{chat_id}</code>")
