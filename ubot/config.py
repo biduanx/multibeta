@@ -8,11 +8,11 @@ DEVS = [7366711345]
 
 KYNAN = list(map(int, os.getenv("KYNAN", "7366711345").split()))
 
-API_ID = int(os.getenv("API_ID", ""))
+API_ID = int(os.getenv("API_ID", "21448110"))
 
-API_HASH = os.getenv("API_HASH", "")
+API_HASH = os.getenv("API_HASH", "c2a04103f18bc9b30669b26a6fc88449")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8278450962:AAFy_E7_UKbsk69lBKDVai-0hi-GA4SEO-8")
 
 SESSION = os.getenv("SESSION", "")
 
@@ -20,7 +20,7 @@ OWNER_ID = int(os.getenv("OWNER_ID", "7366711345"))
 
 USER_ID = list(map(int, os.getenv("USER_ID", "").split()))
 
-LOG_UBOT = int(os.getenv("LOG_UBOT", ""))
+LOG_UBOT = int(os.getenv("LOG_UBOT", "-1003366603232"))
 
 BLACKLIST_CHAT = list(map(int, os.getenv("BLACKLIST_CHAT", "-1001876092598 -1001864253073 -1001451642443 -1001825363971 -1001797285258 -1001927904459 -1001287188817 -1001812143750 -1001608701614 -1001473548283 -1001675459127 -1001938303588 -1001861414061").split()))
 
@@ -35,5 +35,5 @@ OPENAI_KEY = os.getenv(
 
 MONGO_URL = os.getenv(
     "MONGO_URL",
-    "",
+    "mongodb+srv://biduan:biduan@cluster0.3uiosr7.mongodb.net/?appName=Cluster0",
 )
