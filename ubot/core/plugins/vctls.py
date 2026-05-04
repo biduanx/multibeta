@@ -85,7 +85,7 @@ async def join_os(client: Client, message: Message):
         await client.vc.start(chat_id)
     except Exception as e:
         return await Man.edit(f"**ERROR:** `{e}`")
-    await Man.edit(f"**☝️Berhasil Join Ke Obrolan Group**\n└ **Chat ID:** `{chat_id}`")
+    await Man.edit(f"**tuan zp join ke obrolan suara**\n└ **Chat ID:** `{chat_id}`")
     await asyncio.sleep(3)
     await client.vc.set_is_mute(True)
     await asyncio.sleep(3)
@@ -104,7 +104,7 @@ async def turun_os(client: Client, message: Message):
         await client.vc.stop()
     except Exception as e:
         return await edit_or_reply(message, f"**ERROR:** `{e}`")
-    msg = "**👇Berhasil Turun dari Obrolan Suara**"
+    msg = "**tuan zp turun dari obrolan suara**"
     if chat_id:
         msg += f"\n└ **Chat ID:** `{chat_id}`"
     await Man.edit(msg)
