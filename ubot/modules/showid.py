@@ -7,6 +7,12 @@ __HELP__ = """
 
 • Perintah: <code>{0}id</code>
 • Penjelasan: Untuk mengetahui ID dari user/grup/channel.
+
+• Perintah: <code>{0}id</code> [reply to user/media]
+• Penjelasan: Untuk mengetahui ID dari user/media.
+
+• Perintah: <code>{0}getid</code> [username user/grup/channel].
+• Penjelasan: Untuk mengetahui ID user/grup/channel melalui username dengan simbol @.
 </blockquote>
 """
 
