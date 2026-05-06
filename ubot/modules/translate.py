@@ -1,8 +1,8 @@
 from ubot import *
 
 __MODULE__ = "Translate"
-__HELP__ = """
-<blockquote> Bantuan Untuk Translate
+__HELP__ = <blockquote>"""
+Bantuan Untuk Translate
 
 • Perintah: <code>{0}tr</code> [reply/text]
 • Penjelasan: Untuk menerjemahkan text dengan kode negara yang diinginkan.
@@ -12,8 +12,7 @@ __HELP__ = """
 
 • Perintah: <code>{0}tts</code> [reply/text]
 • Penjelasan: Untuk menerjemahkan text dengan kode negara yang diinginkan serta merubahnya menjadi pesan suara.
-</blockquote>
-"""
+"""</blockquote>
 
 
 @PY.UBOT("tts")
