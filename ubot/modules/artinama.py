@@ -1,12 +1,12 @@
 from ubot import *
 
 __MODULE__ = "Artinama"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Arti Nama
+__HELP__ = """
+<blockquote><b>Bantuan Untuk Arti Nama</b>
 
 Perintah:
-<code>{0}artinama nama</code> → Mengartikan dengan nama
-"""</blockquote></b>
+<code>{0}artinama [nama]</code> → Mengartikan dengan nama</blockquote></b>
+"""
 
 
 @PY.UBOT("artinama")
