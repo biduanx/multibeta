@@ -1,8 +1,8 @@
 from ubot import *
 
 __MODULE__ = "Global"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Global
+__HELP__ = """
+<blockquote> Bantuan Untuk Global
 
 • Perintah : <code>{0}gban</ᴄᴏᴅᴇ> [user_id/username/bales pesan]
 • Penjelasan : Untuk melakukan global banned.
@@ -12,7 +12,8 @@ Bantuan Untuk Global
 
 • Perintah : <code>{0}listgban</code> [user_id/username/bales pesan]
 • Penjelasan : Untuk melihat daftar pengguna gban.
-"""</blockquote>
+</blockquote>
+"""
 
 
 @PY.UBOT("gban")
