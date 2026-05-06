@@ -1,12 +1,13 @@
 from ubot import *
 
 __MODULE__ = "Sg"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Sangmata
+__HELP__ = """
+<blockquote> Bantuan Untuk Sangmata
 
 • Perintah: <code>{cobadah}sg</code> [user_id/reply user]
 • Penjelasan: Untuk memeriksa histori nama/username.
-"""</blockquote>
+</blockquote>
+"""
 
 
 @PY.UBOT("sg")
