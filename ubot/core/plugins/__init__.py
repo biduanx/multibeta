@@ -36,7 +36,7 @@ from ubot.core.plugins.pmper import *
 from ubot.core.plugins.txc import *
 from ubot.core.plugins.vctls import *
 from ubot.core.plugins.wbs import *
-from ubot.core.plugins.anm import *
+####from ubot.core.plugins.anm import *
 from ubot.core.plugins.txc3 import *
 from ubot.core.plugins.txc2 import *
 from ubot.core.plugins.ckhdm import *
