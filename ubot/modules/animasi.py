@@ -1,8 +1,8 @@
 from ubot import *
 
 __MODULE__ = "Animasi"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Animasi
+__HELP__ = """
+<blockquote> Bantuan Untuk Animasi
 
 • Perintah: <code>{0}kntl or {0}penis</code>
 • Penjelasan: Coba sendiri.
@@ -21,7 +21,8 @@ Bantuan Untuk Animasi
 
 • Perintah:  <code>{0}kocok</code>
 • Penjelasan:  Coba sendiri.
-"""</blockquote>
+</blockquote>
+"""
 
 """
 @PY.UBOT("loveyou")
