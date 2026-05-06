@@ -1,15 +1,16 @@
 from ubot import *
 
 __MODULE__ = "Spam"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Spam
+__HELP__ = """
+<blockquote> Bantuan Untuk Spam
 
 • Perintah: <code>{0}dspam</code> [jumlah] [waktu delay] [balas pesan]
 • Penjelasan: Untuk melakukan delay spam.
 
 • Perintah: <code>{0}spam</code> [jumlah] [kata]
 • Penjelasan: Untuk melakukan spam.
-"""</blockquote>
+</blockquote>
+"""
 
 
 @PY.UBOT("spam|dspam")
