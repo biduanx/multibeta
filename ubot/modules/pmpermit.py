@@ -2,8 +2,8 @@ from ubot import *
 
 
 __MODULE__ = "Antipm"
-__HELP__ = <blockquote>"""
-Bantuan Untuk PMPermit
+__HELP__ = """
+<blockquote> Bantuan Untuk PMPermit
 
 • Perintah: <code>{0}antipm</code> [on atau off]
 • Penjelasan: Untuk menghidupkan atau mematikan antipm
@@ -18,8 +18,9 @@ Bantuan Untuk PMPermit
 • Penjelasan: Untuk menyetujui pesan.
 
 • Perintah: <code>{0}no</code>
-• Penjelasan: Untuk menolak pesan.
-"""</blockquote>
+• Penjelasan: Untuk menolak pesan.
+</blockquote>
+"""
 
 @PY.UBOT("antipm|pmpermit")
 async def _(client, message):
