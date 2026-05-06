@@ -1,8 +1,8 @@
 from ubot import *
 
 __MODULE__ = "Addbl"
-__HELP__ = <blockquote>"""
- Bantuan Untuk Blacklist
+__HELP__ = """
+<blockquote> Bantuan Untuk Blacklist
 
 • Perintah : <code>{0}rallbl</code>
 • Penjelasan : Menghapus semua anti gcast
@@ -15,7 +15,8 @@ __HELP__ = <blockquote>"""
 
 • Perintah : <code>{0}listbl</code>
 • Penjelasan : Melihat daftar grup anti Gcast.
-"""</blockquote>
+</blockquote>
+"""
 
 
 @PY.UBOT("addbl", FILTERS.ME_GROUP)
