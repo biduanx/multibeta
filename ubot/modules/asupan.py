@@ -1,8 +1,8 @@
 from ubot import *
 
 __MODULE__ = "Asupan"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Asupan
+__HELP__ = """
+<blockquote> Bantuan Untuk Asupan
 
 • Perintah :  <code>{0}asupan</code>
 • Penjelasan :  Untuk mengirim video asupan random.
@@ -18,7 +18,8 @@ Bantuan Untuk Asupan
 
 • Perintah :  <code>{0}anime</code>
 • Penjelasan :  Untuk mengirim photo anime random.
-"""</blockquote>
+</blockquote>
+"""
 
 @PY.UBOT("asupan")
 async def _(client, message):
