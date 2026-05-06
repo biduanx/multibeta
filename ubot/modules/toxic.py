@@ -5,8 +5,8 @@ Amwang Kontol
 from ubot import *
 
 __MODULE__ = "Toxic"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Toxic
+__HELP__ = """
+<blockquote> Bantuan Untuk Toxic
 
 • Perintah: <code>{0}title</code>
 • Penjelasan: Untuk caci maki manusia gak tau diri.
@@ -24,8 +24,9 @@ Bantuan Untuk Toxic
 • Penjelasan: Untuk caci maki manusia gak tau diri.
 
 • Perintah: <code>{0}memeg</code>
-• Penjelasan: Untuk caci maki manusia gak tau diri.
-"""</blockquote>
+• Penjelasan: Untuk caci maki manusia gak tau diri.
+</blockquote>
+"""
 
 
 @PY.UBOT("title")
