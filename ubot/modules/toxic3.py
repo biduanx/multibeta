@@ -5,8 +5,8 @@ Amwang Kontol
 from ubot import *
 
 __MODULE__ = "Toxic3"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Toxic3
+__HELP__ = """
+<blockquote> Bantuan Untuk Toxic3
 
 • Perintah: <code>{0}aliansi</code>
 • Penjelasan: coba sendiri mek.
@@ -28,7 +28,8 @@ Bantuan Untuk Toxic3
 
 • Perintah: <code>{0}war</code>
 • Penjelasan: coba sendiri mek.
-"""</blockquote>
+</blockquote>
+"""
 
 
 
