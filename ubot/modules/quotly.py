@@ -1,8 +1,8 @@
 from ubot import *
 
 __MODULE__ = "Quotly"
-__HELP__ = """
-<blockquote> Bantuan Untuk Quotly
+__HELP__ = <blockquote>"""
+Bantuan Untuk Quotly
 
 • Perintah: <code>{0}q</code> [text/reply to text/media]
 • Penjelasan: Untuk merubah text menjadi sticker.
@@ -12,8 +12,7 @@ __HELP__ = """
 
 • Perintah : <code>{0}kang</code> [balas ke stiker]
 • Penjelasan : Untuk membuat kosum stiker pak.
-</blockquote>
-"""
+"""</blockquote>
 
 
 @PY.UBOT("q")
