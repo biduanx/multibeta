@@ -2,8 +2,8 @@ from ubot import *
 
 
 __MODULE__ = "Vc"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Voice Chat
+__HELP__ = """
+<blockquote> Bantuan Untuk Voice Chat
 
 • Perintah: <code>{0}startvc</code>
 • Penjelasan: Untuk memulai voice chat grup.
@@ -15,8 +15,9 @@ Bantuan Untuk Voice Chat
 • Penjelasan: Untuk memulai voice chat grup.
 
 • Perintah: <code>{0}lvc</code>
-• Penjelasan: Untuk mengakhiri voice chat grup.
-"""</blockquote>
+• Penjelasan: Untuk mengakhiri voice chat grup.
+</blockquote>
+"""
 
 
 
