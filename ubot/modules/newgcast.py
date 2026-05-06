@@ -4,12 +4,12 @@ from ubot.core.database.saved import get_chat
 
 
 __MODULE__ = "Gcast2"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Gcast2
+__HELP__ = """
+<blockquote> Bantuan Untuk Gcast2
 
 • Perintah : <code>{0}bc</code> [gc balas ke pesan]
 • Penjelasan : gc grup, adm khusus admin, pv private chat.
-"""</blockquote>
+"""
 
 def get_message(message):
     msg = (
