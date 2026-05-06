@@ -3,7 +3,6 @@ from ubot import *
 
 __MODULE__ = "Antipm"
 __HELP__ = <blockquote>"""
-
 Bantuan Untuk PMPermit
 
 • Perintah: <code>{0}antipm</code> [on atau off]
