@@ -1,8 +1,8 @@
 from ubot import *
 
 __MODULE__ = "Gcast"
-__HELP__ = """
-<blockquote> Bantuan Untuk Gcast
+__HELP__ = <blockquote>"""
+Bantuan Untuk Gcast
 
 • Perintah : <code>{0}ucast</code> [balas pesan/kirim pesan]
 • Penjelasan : Untuk pengirim pesan ke semua pengguna.
@@ -15,8 +15,7 @@ __HELP__ = """
 
 • Perintah : <code>{0}send</code> [username/user_id - teks/reply]
 • Penjelasan : Untuk mengirim pesan ke pengguna/grup/channel.
-  </blockquote>
-"""
+"""</blockquote>
 
 
 @PY.UBOT("gcast")
