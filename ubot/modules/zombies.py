@@ -1,13 +1,12 @@
 from ubot import *
 
 __MODULE__ = "Zombies"
-__HELP__ = """
-<blockquote> Bantuan Untuk Zombies
+__HELP__ = <blockquote>"""
+Bantuan Untuk Zombies
 
 • Perintah: <code>{0}zombies</code>
 • Penjelasan: Untuk mengeluarkan akun depresi digrup anda.
-</blockquote>
-"""
+"""</blockquote>
 
 @PY.UBOT("zombies")
 async def _(client, message):
