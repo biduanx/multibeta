@@ -11,6 +11,6 @@ from ubot.core.helpers.tools import *
 from ubot.core.helpers.unpack import *
 from ubot.core.helpers.uptime import *
 from ubot.core.helpers.yt_dl import *
-from ubot.core.helpers.anim_tool import *
+####from ubot.core.helpers.anim_tool import *
 from ubot.core.helpers import http
 from ubot.core.helpers.section import *
