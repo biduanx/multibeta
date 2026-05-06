@@ -1,8 +1,8 @@
 from ubot import *
 
 __MODULE__ = "Admin"
-__HELP__ = <blockquote>"""
- Bantuan Untuk Admin
+__HELP__ = """
+<blockquote> Bantuan Untuk Admin
 
 • Perintah : <code>{0}kick or dkick</code> [user_id/username/reply user]
 • Penjelasan : Untuk menendang anggota dari grup.
@@ -18,7 +18,8 @@ __HELP__ = <blockquote>"""
 
 • Perintah : <code>{0}unmute</code> [user_id/username/reply user]
 • Penjelasan : Untuk melepas pembisuan anggota dari grup.
-"""</blockquote>
+</blockquote>
+"""
 
 
 @PY.UBOT("kick|ban|mute|unmute|unban", FILTERS.ME_GROUP)
