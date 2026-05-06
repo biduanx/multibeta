@@ -1,8 +1,8 @@
 from ubot import *
 
 __MODULE__ = "Convert"
-__HELP__ = """
-<blockquote> Bantuan Untuk Convert
+__HELP__ = <blockquote>"""
+Bantuan Untuk Convert
  
 • Perintah : <code>{0}toimg</code> [balas stiker/gif]
 • Penjelasan : Merubah stiker/gif ke foto.
@@ -18,8 +18,7 @@ __HELP__ = """
 
 • Perintah : <code>{0}curi</code> [balas pesan]
 • Penjelasan : Untuk mencuri media timer, cek pesan tersimpan
-</blockquote>
-"""
+"""</blockquote>
 
 
 @PY.UBOT("toimg")
