@@ -2,12 +2,13 @@ from ubot import *
 
 
 __MODULE__ = "ShowID"
-__HELP__ = <blockquote>"""
-Bantuan Untuk Show ID
+__HELP__ = """
+<blockquote> Bantuan Untuk Show ID
 
 • Perintah: <code>{0}id</code>
 • Penjelasan: Untuk mengetahui ID dari user/grup/channel.
-"""</blockquote>
+</blockquote>
+"""
 
 
 @PY.UBOT("id")
