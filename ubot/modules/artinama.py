@@ -5,7 +5,7 @@ __HELP__ = """
 <blockquote><b>Bantuan Untuk Arti Nama</b>
 
 Perintah:
-<code>{0}artinama [nama]</code> → Mengartikan dengan nama</blockquote></b>
+<code>{0}artinama nama</code> → Mengartikan dengan nama</blockquote></b>
 """
 
 
